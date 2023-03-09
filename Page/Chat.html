@@ -1,0 +1,687 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Font Awesome -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet" />
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" rel="stylesheet" />
+  <!-- MDB -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.1.0/mdb.min.css" rel="stylesheet" />
+  <!-- MDB javascript-->
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.1.0/mdb.min.js"></script>
+  <!-- CSS Animate On Scroll Library -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <!-- JavaScript Animate On Scroll Library -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <!-- CSS dari assets -->
+  <link rel="stylesheet" href="../assets/style.css">
+  <!-- CSS dari assets -->
+  <link rel="stylesheet" href="../assets/Logo.css">
+  <!-- CSS Media Query dari assets -->
+  <link rel="stylesheet" href="../assets/mobileStyle.css">
+
+  <title>Chat</title>
+</head>
+
+<body>
+  <!--   Button back to top -->
+  <button type="button" class="btn btn-danger btn-floating btn-lg" id="btn-back-to-top">
+    <i class="fas fa-arrow-up"></i>
+  </button>
+  <!--   Button back to top -->
+
+  <!-- Navbar BOT-->
+  <nav class="navbar navbar-expand-lg fixed-top fixed-top-2" id="navbarbot">
+    <div class=" container-fluid justify-content-between mx-5">
+      <!-- Left elements -->
+      <div class="d-flex">
+        <!-- Brand -->
+        <a class="navbar-brand me-2 mb-1 d-flex align-items-center" href="Home.html">
+          <img src="../Foto/content/Lavaca.png" width="75" alt="Lavaca Logo" loading="lazy" style="margin-top: -15px" />
+        </a>
+      </div>
+      <!-- Search form -->
+      <form class="navbar-nav flex-row input-group w-50 me-lg-1">
+        <input type="search" class="form-control" placeholder="Cari produk" aria-label="Search" width="100" />
+        <a href="Pencarian.html" class="btn btn-outline text-light" data-mdb-ripple-color="dark" id="warna-tema-bg">
+          Search
+        </a>
+      </form>
+      <!-- Search form -->
+      <!-- Left elements -->
+
+      <!-- Center elements -->
+      <div class="collapse navbar-collapse">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link" href="#">Handphone</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Laptop</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Kalung</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Nike</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Kaos</a>
+          </li>
+        </ul>
+      </div>
+      <!-- Center elements -->
+
+      <!-- Right elements -->
+
+      <ul class="navbar-nav flex-row">
+        <li class="nav-item dropdown me-3 me-lg-1">
+          <a class="nav-link dropdown-toggle hidden-arrow" href="#" id="navbarDropdownMenuLink" role="button"
+            data-mdb-toggle="dropdown" aria-expanded="false">
+            <i class="fas fa-shopping-bag fa-lg"></i>
+            <span class="badge rounded-pill badge-notification bg-danger">6</span>
+          </a>
+
+          <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdownMenuLink" style="width: 300px;">
+            <div class="list-group list-group-light">
+              <a href="Keranjang.html" class="list-group-item list-group-item-action px-3 border-0 ripple">
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="d-flex align-items-center">
+                    <img src="https://cdn.eraspace.com/media/catalog/product/i/p/iphone_14_pro_max_deep_purple_1_6.jpg"
+                      alt="" style="width: 45px; height: 45px" class="rounded-square" />
+                    <div class="ms-3">
+                      <p class="fw-bold mb-1">Iphone</p>
+                      <p class="text-muted mb-0">1 Pcs</p>
+                    </div>
+                  </div>
+                  <span class="badge rounded-pill badge-success">Rp25.000.000</span>
+                </div>
+              </a>
+              <a href="Keranjang.html" class="list-group-item list-group-item-action px-3 border-0 ripple">
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="d-flex align-items-center">
+                    <img src="https://mdbootstrap.com/img/new/avatars/8.jpg" alt="" style="width: 45px; height: 45px"
+                      class="rounded-square" />
+                    <div class="ms-3">
+                      <p class="fw-bold mb-1">Crop Top Pakaian</p>
+                      <p class="text-muted mb-0">1 Pcs</p>
+                    </div>
+                  </div>
+                  <span class="badge rounded-pill badge-success">Rp250.000</span>
+                </div>
+              </a>
+              <div class="d-flex justify-content-between align-items-center px-3 py-3">
+                <div class="d-flex align-items-center">
+                  <a href="Keranjang.html" class="btn btn-outline btn-sm" id="warna-tema">
+                    Lihat Keranjang
+                  </a>
+                </div>
+              </div>
+            </div>
+          </ul>
+        </li>
+
+        <li class="nav-item dropdown me-3 me-lg-1   ">
+          <a class="nav-link dropdown-toggle hidden-arrow" href="#" id="navbarDropdownMenuLink" role="button"
+            data-mdb-toggle="dropdown" aria-expanded="false">
+            <i class="fas fa-comments fa-lg"></i>
+            <span class="badge rounded-pill badge-notification bg-danger">6</span>
+          </a>
+
+          <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdownMenuLink" style="width: auto;">
+            <!-- chat dropdown -->
+            <div class="list-group list-group-light">
+
+              <div class="p-3">
+                <div data-mdb-perfect-scrollbar="true" style="position: relative; width: 400px">
+                  <ul class="list-unstyled mb-0">
+                    <li class="p-2 border-bottom list-group-item list-group-item-action border-0 ripple">
+                      <a href="Chat.html" class="d-flex justify-content-between">
+                        <div class="d-flex flex-row">
+                          <div>
+                            <img
+                              src="https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-profiles/avatar-2.webp"
+                              alt="Generic placeholder image"
+                              class="d-flex align-self-center me-3 img-fluid rounded-circle border border-dark border-3"
+                              width="60">
+                            <span class="badge bg-success badge-dot"></span>
+                          </div>
+                          <div class="pt-1">
+                            <p class="fw-bold mb-0" id="warna-tema">Sanjaya Shop</p>
+                            <p class="small text-muted">Hallo kak Selamat datang...</p>
+                          </div>
+                        </div>
+                        <div class="pt-1">
+                          <p class="small text-muted mb-1">Just now</p>
+                          <span class="badge rounded-pill float-end" id="warna-tema-bg">2</span>
+                        </div>
+                      </a>
+                    </li>
+                    <li class="p-2 border-bottom list-group-item list-group-item-action border-0 ripple">
+                      <a href="#!" class="d-flex justify-content-between">
+                        <div class="d-flex flex-row">
+                          <div>
+                            <img
+                              src="https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-profiles/avatar-2.webp"
+                              alt="Generic placeholder image"
+                              class="d-flex align-self-center me-3 img-fluid rounded-circle border border-dark border-3"
+                              width="60">
+                            <span class="badge bg-warning badge-dot"></span>
+                          </div>
+                          <div class="pt-1">
+                            <p class="fw-bold mb-0" id="warna-tema">Permata Indah</p>
+                            <p class="small text-muted">Hallo kak Selamat datang...</p>
+                          </div>
+                        </div>
+                        <div class="pt-1">
+                          <p class="small text-muted mb-1">5 mins ago</p>
+                          <span class="badge rounded-pill float-end" id="warna-tema-bg">2</span>
+                        </div>
+                      </a>
+                    </li>
+                    <li class="p-2 border-bottom list-group-item list-group-item-action border-0 ripple">
+                      <a href="#!" class="d-flex justify-content-between">
+                        <div class="d-flex flex-row">
+                          <div>
+                            <img
+                              src="https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-profiles/avatar-2.webp"
+                              alt="Generic placeholder image"
+                              class="d-flex align-self-center me-3 img-fluid rounded-circle border border-dark border-3"
+                              width="60">
+                            <span class="badge bg-success badge-dot"></span>
+                          </div>
+                          <div class="pt-1">
+                            <p class="fw-bold mb-0" id="warna-tema">Agung Style</p>
+                            <p class="small text-muted">Iya kak</p>
+                          </div>
+                        </div>
+                        <div class="pt-1">
+                          <p class="small text-muted mb-1">Yesterday</p>
+                        </div>
+                      </a>
+                    </li>
+                    <li class="p-2 border-bottom list-group-item list-group-item-action border-0 ripple">
+                      <a href="#!" class="d-flex justify-content-between">
+                        <div class="d-flex flex-row">
+                          <div>
+                            <img
+                              src="https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-profiles/avatar-2.webp"
+                              alt="Generic placeholder image"
+                              class="d-flex align-self-center me-3 img-fluid rounded-circle border border-dark border-3"
+                              width="60">
+                            <span class="badge bg-danger badge-dot"></span>
+                          </div>
+                          <div class="pt-1">
+                            <p class="fw-bold mb-0" id="warna-tema">Toko Olahraga Pusat</p>
+                            <p class="small text-muted">Yang warna merah kosong kak</p>
+                          </div>
+                        </div>
+                        <div class="pt-1">
+                          <p class="small text-muted mb-1">Yesterday</p>
+                        </div>
+                      </a>
+                    </li>
+                    <li class="p-2 border-bottom list-group-item list-group-item-action border-0 ripple">
+                      <a href="#!" class="d-flex justify-content-between">
+                        <div class="d-flex flex-row">
+                          <div>
+                            <img
+                              src="https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-profiles/avatar-2.webp"
+                              alt="Generic placeholder image"
+                              class="d-flex align-self-center me-3 img-fluid rounded-circle border border-dark border-3"
+                              width="60">
+                            <span class="badge bg-warning badge-dot"></span>
+                          </div>
+                          <div class="pt-1">
+                            <p class="fw-bold mb-0" id="warna-tema">Cute Shop</p>
+                            <p class="small text-muted">Stok habis mohom maaf</p>
+                          </div>
+                        </div>
+                        <div class="pt-1">
+                          <p class="small text-muted mb-1">Yesterday</p>
+                        </div>
+                      </a>
+                    </li>
+                    <li class="p-2 border-bottom list-group-item border-0">
+                      <div class="d-flex justify-content-between align-items-center px-3 py-3">
+                        <div class="d-flex align-items-center">
+                          <a href="Chat.html" class="btn btn-outline btn-sm" id="warna-tema">
+                            Lihat Chat
+                          </a>
+                        </div>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+
+              </div>
+
+            </div>
+            <!-- chat dropdown -->
+
+          </ul>
+        </li>
+
+        <!-- profile -->
+        <li class="nav-item dropdown me-3 me-lg-1">
+          <a class="nav-link dropdown-toggle d-sm-flex align-items-sm-center" href="#" id="navbarDropdownMenuLink"
+            role="button" data-mdb-toggle="dropdown" aria-expanded="false">
+            <img src="https://mdbcdn.b-cdn.net/img/new/avatars/1.webp" class="rounded-circle" height="22"
+              alt="Black and White Portrait of a Man" loading="lazy" />
+            <strong class="d-none d-sm-block ms-1">Daniel</strong>
+          </a>
+
+          <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdownMenuLink">
+            <div class="list-group list-group-light">
+              <a href="Profil.html" class="list-group-item list-group-item-action px-3 border-0 ripple">
+                <div class="fw-bold">Show Profile</div>
+              </a>
+              <a href="../index.html" class="list-group-item list-group-item-action px-3 border-0 ripple">
+                <div class="fw-bold">Logout</div>
+              </a>
+            </div>
+          </ul>
+        </li>
+      </ul>
+      <!-- Right elements -->
+    </div>
+  </nav>
+  <!-- Navbar BOT-->
+
+  <!-- Navbar TOP-->
+  <nav class="navbar navbar-expand-sm fixed-top" id="navbartop" style="margin-top: -5px; margin-bottom: -10px">
+    <div class=" container-fluid justify-content-between mx-5">
+      <!-- Left elements -->
+      <div class="d-flex">
+
+      </div>
+      <div class="collapse navbar-collapse flex-row" id="navbarTogglerDemo02">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <nav aria-label="breadcrumb">
+            <ol class="breadcrumb">
+              <li class="breadcrumb-item">
+                <a href="#" class="text-white">Lavaca Home Stay</a>
+              </li>
+              <li class="breadcrumb-item">
+                <a href="#" class="text-white">L Tim</a>
+              </li>
+            </ol>
+          </nav>
+        </ul>
+      </div>
+      <!-- Left elements -->
+
+      <!-- Center elements -->
+
+      <!-- Center elements -->
+
+      <!-- Right elements -->
+
+      <div class="flex-row">
+        <ul class="collapse navbar-collapse navbar-nav me-auto mb-2 mb-lg-0" id="navbarTogglerDemo02">
+          <nav aria-label="breadcrumb">
+            <ol class="breadcrumb bread">
+              <li class="breadcrumb-item">
+                <a href="#" class="text-white">Tentang</a>
+              </li>
+              <li class="breadcrumb-item active" aria-current="page">
+                <a href="#" class="text-white">Bantuan</a>
+              </li>
+            </ol>
+          </nav>
+        </ul>
+        <button class="navbar-toggler" type="button" data-mdb-toggle="collapse" data-mdb-target="#navbarTogglerDemo02"
+          aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+          <i class="fas fa-bars"></i>
+        </button>
+      </div>
+      <!-- Right elements -->
+    </div>
+  </nav>
+  <!-- Navbar TOP -->
+
+  <!--   Chat  -->
+  <section>
+    <div class="container-fluid mt-5 pt-3">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="card mt-5 " id="chat3">
+            <div class="card-body">
+              <div class="row">
+                <div class="col-md-6 col-lg-5 col-xl-4 mb-4 mb-md-0">
+                  <div class="p-3">
+                    <div class="input-group rounded mb-3">
+                      <input type="search" class="form-control rounded" placeholder="Search" aria-label="Search"
+                        aria-describedby="search-addon" />
+                      <span class="input-group-text border-0" id="search-addon">
+                        <i class="fas fa-search"></i>
+                      </span>
+                    </div>
+
+                    <div data-mdb-perfect-scrollbar="true" style="position: relative; height: 400px">
+                      <ul class="list-unstyled mb-0">
+                        <li class="p-2 border-bottom">
+                          <a href="#!" class="d-flex justify-content-between">
+                            <div class="d-flex flex-row">
+                              <div>
+                                <img
+                                  src="https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-profiles/avatar-2.webp"
+                                  alt="Generic placeholder image"
+                                  class="d-flex align-self-center me-3 img-fluid rounded-circle border border-dark border-3"
+                                  width="60">
+                                <span class="badge bg-success badge-dot"></span>
+                              </div>
+                              <div class="pt-1">
+                                <p class="fw-bold mb-0" id="warna-tema">Sanjaya Shop</p>
+                                <p class="small text-muted">Hallo kak Selamat datang...</p>
+                              </div>
+                            </div>
+                            <div class="pt-1">
+                              <p class="small text-muted mb-1">Just now</p>
+                              <span class="badge rounded-pill float-end" id="warna-tema-bg">2</span>
+                            </div>
+                          </a>
+                        </li>
+                        <li class="p-2 border-bottom">
+                          <a href="Chat.html" class="d-flex justify-content-between">
+                            <div class="d-flex flex-row">
+                              <div>
+                                <img
+                                  src="https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-profiles/avatar-2.webp"
+                                  alt="Generic placeholder image"
+                                  class="d-flex align-self-center me-3 img-fluid rounded-circle border border-dark border-3"
+                                  width="60">
+                                <span class="badge bg-warning badge-dot"></span>
+                              </div>
+                              <div class="pt-1">
+                                <p class="fw-bold mb-0" id="warna-tema">Permata Indah</p>
+                                <p class="small text-muted">Hallo kak Selamat datang...</p>
+                              </div>
+                            </div>
+                            <div class="pt-1">
+                              <p class="small text-muted mb-1">5 mins ago</p>
+                              <span class="badge rounded-pill float-end" id="warna-tema-bg">2</span>
+                            </div>
+                          </a>
+                        </li>
+                        <li class="p-2 border-bottom">
+                          <a href="Chat.html" class="d-flex justify-content-between">
+                            <div class="d-flex flex-row">
+                              <div>
+                                <img
+                                  src="https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-profiles/avatar-2.webp"
+                                  alt="Generic placeholder image"
+                                  class="d-flex align-self-center me-3 img-fluid rounded-circle border border-dark border-3"
+                                  width="60">
+                                <span class="badge bg-success badge-dot"></span>
+                              </div>
+                              <div class="pt-1">
+                                <p class="fw-bold mb-0" id="warna-tema">Agung Style</p>
+                                <p class="small text-muted">Iya kak</p>
+                              </div>
+                            </div>
+                            <div class="pt-1">
+                              <p class="small text-muted mb-1">Yesterday</p>
+                            </div>
+                          </a>
+                        </li>
+                        <li class="p-2 border-bottom">
+                          <a href="Chat.html" class="d-flex justify-content-between">
+                            <div class="d-flex flex-row">
+                              <div>
+                                <img
+                                  src="https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-profiles/avatar-2.webp"
+                                  alt="Generic placeholder image"
+                                  class="d-flex align-self-center me-3 img-fluid rounded-circle border border-dark border-3"
+                                  width="60">
+                                <span class="badge bg-danger badge-dot"></span>
+                              </div>
+                              <div class="pt-1">
+                                <p class="fw-bold mb-0" id="warna-tema">Toko Olahraga Pusat</p>
+                                <p class="small text-muted">Yang warna merah kosong kak</p>
+                              </div>
+                            </div>
+                            <div class="pt-1">
+                              <p class="small text-muted mb-1">Yesterday</p>
+                            </div>
+                          </a>
+                        </li>
+                        <li class="p-2 border-bottom">
+                          <a href="Chat.html" class="d-flex justify-content-between">
+                            <div class="d-flex flex-row">
+                              <div>
+                                <img
+                                  src="https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-profiles/avatar-2.webp"
+                                  alt="Generic placeholder image"
+                                  class="d-flex align-self-center me-3 img-fluid rounded-circle border border-dark border-3"
+                                  width="60">
+                                <span class="badge bg-warning badge-dot"></span>
+                              </div>
+                              <div class="pt-1">
+                                <p class="fw-bold mb-0" id="warna-tema">Cute Shop</p>
+                                <p class="small text-muted">Stok habis mohom maaf</p>
+                              </div>
+                            </div>
+                            <div class="pt-1">
+                              <p class="small text-muted mb-1">Yesterday</p>
+                            </div>
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
+
+                  </div>
+
+                </div>
+
+                <div class="col-md-6 col-lg-7 col-xl-8">
+
+                  <div class="pt-3 pe-3" data-mdb-perfect-scrollbar="true" style="position: relative; height: 400px">
+
+                    <div class="d-flex flex-row justify-content-start">
+                      <img src="https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-profiles/avatar-2.webp"
+                        alt="Generic placeholder image" class="rounded-circle border border-dark border-3"
+                        style="width: 45px; height: 100%;"">
+                      <div>
+                        <p class=" small p-2 ms-3 mb-1 rounded-3" style="background-color: #f5f6f7;">
+                      Hallo kak Selamat datang. Terimkasih sudah order di toko kami.
+                      Kami akan mengirim barang secepat mungkin ya kak. Mohon ditunggu. Terimakasih...
+                      </p>
+                      <p class="small ms-3 mb-3 rounded-3 text-muted float-end">12:00 PM | Aug 13</p>
+                    </div>
+                  </div>
+
+                  <div class="d-flex flex-row justify-content-end">
+                    <div>
+                      <p class="small p-2 me-3 mb-1 text-white rounded-3" id="warna-tema-bg">
+                        Tolong barangnya dikasih protection ya kak
+                      </p>
+                      <p class="small me-3 mb-3 rounded-3 text-muted">12:00 PM | Aug 13</p>
+                    </div>
+                    <img src="https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-profiles/avatar-2.webp"
+                      alt="Generic placeholder image" class="rounded-circle border border-dark border-3"
+                      style="width: 45px; height: 100%;"">
+                    </div>
+
+                    <div class=" d-flex flex-row justify-content-start">
+                    <img src="https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-profiles/avatar-2.webp"
+                      alt="Generic placeholder image" class="rounded-circle border border-dark border-3"
+                      style="width: 45px; height: 100%;"">
+                      <div>
+                        <p class=" small p-2 ms-3 mb-1 rounded-3" style="background-color: #f5f6f7;">
+                    Baik kak
+                    </p>
+                    <p class="small ms-3 mb-3 rounded-3 text-muted float-end">12:00 PM | Aug 13</p>
+                  </div>
+                </div>
+
+              </div>
+
+              <div class="text-muted d-flex justify-content-start align-items-center pe-3 pt-3 mt-2">
+                <img src="https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-profiles/avatar-2.webp"
+                  alt="Generic placeholder image" class="rounded-circle border border-dark border-3"
+                  style="width: 40px; height: 100%;"">
+                <input type=" text" class="form-control form-control-lg" id="exampleFormControlInput2"
+                  placeholder="Type message">
+                <a class="ms-1 text-muted" href="#!"><i class="fas fa-paperclip"></i></a>
+                <a class="ms-3 text-muted" href="#!"><i class="fas fa-smile"></i></a>
+                <a class="ms-3" href="#!"><i class="fas fa-paper-plane" id="warna-tema"></i></a>
+              </div>
+
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+    </div>
+
+    </div>
+  </section>
+  <!--   Chat -->
+
+  <!-- Footer -->
+  <footer class="text-center text-lg-start bg-white text-muted p-3 p-xl-0">
+    <!-- Section: Social media -->
+    <div class="container-sm mt-4">
+      <section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
+        <!-- Left -->
+        <div class="me-5 d-none d-lg-block">
+          <span>Ikuti Kami:</span>
+        </div>
+        <!-- Left -->
+
+        <!-- Right -->
+        <div>
+          <a href="" class="me-4 link-secondary">
+            <i class="fab fa-facebook-f"></i>
+          </a>
+          <a href="" class="me-4 link-secondary">
+            <i class="fab fa-twitter"></i>
+          </a>
+          <a href="" class="me-4 link-secondary">
+            <i class="fab fa-instagram"></i>
+          </a>
+          <a href="" class="me-4 link-secondary">
+            <i class="fab fa-pinterest"></i>
+          </a>
+          <a href="" class="me-4 link-secondary">
+            <i class="fab fa-linkedin"></i>
+          </a>
+        </div>
+        <!-- Right -->
+      </section>
+      <!-- Section: Social media -->
+    </div>
+
+    <!-- Section: Links  -->
+    <section class="">
+      <div class="container-md text-md-start mt-5">
+        <!-- Grid row -->
+        <div class="row mt-3">
+          <!-- Grid column -->
+          <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+            <!-- Content -->
+            <h6 class="text-uppercase fw-bold mb-4">
+              <i class="fas fa-gem me-3 text-secondary" style="text-align: center;"></i>Lavaca
+            </h6>
+            <p style="text-align: justify;">
+              Dengan visi untuk menjadi online shop terpercaya dan terbaik di Indonesia, Lavanca selalu
+              berusaha
+              memberikan pengalaman belanja yang nyaman dan aman bagi pelanggannya.
+            </p>
+          </div>
+          <!-- Grid column -->
+
+          <!-- Grid column -->
+          <div class="col-md-2 col-lg-2 col-xl-2 mx-auto text-left mb-4">
+            <!-- Links -->
+            <h6 class="text-uppercase fw-bold mb-4">
+              Jelajahi
+            </h6>
+            <p>
+              <a href="#!" class="text-reset">Tentang Lavaca</a>
+            </p>
+            <p>
+              <a href="#!" class="text-reset">L tim</a>
+            </p>
+            <p>
+              <a href="#!" class="text-reset">Kebijakan Lavaca</a>
+            </p>
+            <p>
+              <a href="#!" class="text-reset">Kebijakan privasi</a>
+            </p>
+          </div>
+          <!-- Grid column -->
+
+          <!-- Grid column -->
+          <div class="col-md-3 col-lg-2 col-xl-2 mx-auto text-left mb-4">
+            <!-- Links -->
+            <h6 class="text-uppercase fw-bold mb-4">
+              Layanan
+            </h6>
+            <p>
+              <a href="#!" class="text-reset">Bantuan</a>
+            </p>
+            <p>
+              <a href="#!" class="text-reset">Checkout</a>
+            </p>
+            <p>
+              <a href="#!" class="text-reset">LavacaPay</a>
+            </p>
+            <p>
+              <a href="#!" class="text-reset">Garansi</a>
+            </p>
+          </div>
+          <!-- Grid column -->
+
+          <!-- Grid column -->
+          <div class="col-md-4 col-lg-3 col-xl-3 mx-auto text-left mb-md-0 mb-4">
+            <!-- Links -->
+            <h6 class="text-uppercase fw-bold mb-4">Download Lavaca</h6>
+            <p>
+              <a href="#!" class="text-reset">
+                <img src="../Foto/content/playstoredown.png" alt="" style="width: 150px; height: auto"
+                  class="rounded-square" />
+              </a>
+            </p>
+            <p>
+              <a href="#!" class="text-reset">
+                <img src="../Foto/content/appstoredown.png" alt="" style="width: 150px; height: auto"
+                  class="rounded-square" />
+              </a>
+            </p>
+          </div>
+          <!-- Grid column -->
+        </div>
+        <!-- Grid row -->
+      </div>
+    </section>
+    <!-- Section: Links  -->
+
+    <!-- Copyright -->
+    <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.025);">
+      © 2023 Copyright:
+      <a class="text-reset fw-bold" href="https://mdbootstrap.com/">Lavaca.com</a>
+    </div>
+    <!-- Copyright -->
+  </footer>
+  <!-- Footer -->
+
+  <!-- JavaScript dari assets -->
+  <script src="../assets/script.js"></script>
+  <!-- JavaScript dari assets -->
+  <!-- Init Animasi -->
+  <script>
+    AOS.init();
+  </script>
+  <!-- Init Animasi -->
+</body>
+
+
+</html>

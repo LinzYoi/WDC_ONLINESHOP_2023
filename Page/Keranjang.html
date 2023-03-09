@@ -1,0 +1,1064 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Font Awesome -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet" />
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" rel="stylesheet" />
+  <!-- MDB -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.1.0/mdb.min.css" rel="stylesheet" />
+  <!-- MDB javascript-->
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.1.0/mdb.min.js"></script>
+  <!-- CSS Animate On Scroll Library -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <!-- JavaScript Animate On Scroll Library -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <!-- CSS dari assets -->
+  <link rel="stylesheet" href="../assets/style.css">
+
+  <!-- CSS Media Query dari assets -->
+  <link rel="stylesheet" href="../assets/mobileStyle.css">
+
+  <script src="../assets/sc"></script>
+  <title>Keranjang</title>
+</head>
+
+<body>
+  <!--   Button back to top -->
+  <button type="button" class="btn btn-danger btn-floating btn-lg" id="btn-back-to-top">
+    <i class="fas fa-arrow-up"></i>
+  </button>
+  <!--   Button back to top -->
+
+  <!-- Navbar BOT-->
+  <nav class="navbar navbar-expand-lg fixed-top fixed-top-2" id="navbarbot">
+    <div class=" container-fluid justify-content-between mx-5">
+      <!-- Left elements -->
+      <div class="d-flex">
+        <!-- Brand -->
+        <a class="navbar-brand me-2 mb-1 d-flex align-items-center" href="Home.html">
+          <img src="../Foto/content/Lavaca.png" width="75" alt="Lavaca Logo" loading="lazy" style="margin-top: -15px" />
+        </a>
+      </div>
+      <!-- Search form -->
+      <form class="navbar-nav flex-row input-group w-50 me-lg-1">
+        <input type="search" class="form-control" placeholder="Cari produk" aria-label="Search" width="100" />
+        <a href="Pencarian.html" class="btn btn-outline text-light" data-mdb-ripple-color="dark" id="warna-tema-bg">
+          Search
+        </a>
+      </form>
+      <!-- Search form -->
+      <!-- Left elements -->
+
+      <!-- Center elements -->
+      <div class="collapse navbar-collapse">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link" href="#">Handphone</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Laptop</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Kalung</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Nike</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Kaos</a>
+          </li>
+        </ul>
+      </div>
+      <!-- Center elements -->
+
+      <!-- Right elements -->
+
+      <ul class="navbar-nav flex-row">
+        <li class="nav-item dropdown me-3 me-lg-1">
+          <a class="nav-link dropdown-toggle hidden-arrow" href="#" id="navbarDropdownMenuLink" role="button"
+            data-mdb-toggle="dropdown" aria-expanded="false">
+            <i class="fas fa-shopping-bag fa-lg"></i>
+            <span class="badge rounded-pill badge-notification bg-danger">6</span>
+          </a>
+
+          <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdownMenuLink" style="width: 300px;">
+            <div class="list-group list-group-light">
+              <a href="Keranjang.html" class="list-group-item list-group-item-action px-3 border-0 ripple">
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="d-flex align-items-center">
+                    <img src="https://cdn.eraspace.com/media/catalog/product/i/p/iphone_14_pro_max_deep_purple_1_6.jpg"
+                      alt="" style="width: 45px; height: 45px" class="rounded-square" />
+                    <div class="ms-3">
+                      <p class="fw-bold mb-1">Iphone</p>
+                      <p class="text-muted mb-0">1 Pcs</p>
+                    </div>
+                  </div>
+                  <span class="badge rounded-pill badge-success">Rp25.000.000</span>
+                </div>
+              </a>
+              <a href="Keranjang.html" class="list-group-item list-group-item-action px-3 border-0 ripple">
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="d-flex align-items-center">
+                    <img src="https://mdbootstrap.com/img/new/avatars/8.jpg" alt="" style="width: 45px; height: 45px"
+                      class="rounded-square" />
+                    <div class="ms-3">
+                      <p class="fw-bold mb-1">Crop Top Pakaian</p>
+                      <p class="text-muted mb-0">1 Pcs</p>
+                    </div>
+                  </div>
+                  <span class="badge rounded-pill badge-success">Rp250.000</span>
+                </div>
+              </a>
+              <div class="d-flex justify-content-between align-items-center px-3 py-3">
+                <div class="d-flex align-items-center">
+                  <a href="Keranjang.html" class="btn btn-outline btn-sm" id="warna-tema">
+                    Lihat Keranjang
+                  </a>
+                </div>
+              </div>
+            </div>
+          </ul>
+        </li>
+
+        <li class="nav-item dropdown me-3 me-lg-1   ">
+          <a class="nav-link dropdown-toggle hidden-arrow" href="#" id="navbarDropdownMenuLink" role="button"
+            data-mdb-toggle="dropdown" aria-expanded="false">
+            <i class="fas fa-comments fa-lg"></i>
+            <span class="badge rounded-pill badge-notification bg-danger">6</span>
+          </a>
+
+          <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdownMenuLink" style="width: auto;">
+            <!-- chat dropdown -->
+            <div class="list-group list-group-light">
+
+              <div class="p-3">
+                <div data-mdb-perfect-scrollbar="true" style="position: relative; width: 400px">
+                  <ul class="list-unstyled mb-0">
+                    <li class="p-2 border-bottom list-group-item list-group-item-action border-0 ripple">
+                      <a href="Chat.html" class="d-flex justify-content-between">
+                        <div class="d-flex flex-row">
+                          <div>
+                            <img
+                              src="https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-profiles/avatar-2.webp"
+                              alt="Generic placeholder image"
+                              class="d-flex align-self-center me-3 img-fluid rounded-circle border border-dark border-3"
+                              width="60">
+                            <span class="badge bg-success badge-dot"></span>
+                          </div>
+                          <div class="pt-1">
+                            <p class="fw-bold mb-0" id="warna-tema">Sanjaya Shop</p>
+                            <p class="small text-muted">Hallo kak Selamat datang...</p>
+                          </div>
+                        </div>
+                        <div class="pt-1">
+                          <p class="small text-muted mb-1">Just now</p>
+                          <span class="badge rounded-pill float-end" id="warna-tema-bg">2</span>
+                        </div>
+                      </a>
+                    </li>
+                    <li class="p-2 border-bottom list-group-item list-group-item-action border-0 ripple">
+                      <a href="Chat.html" class="d-flex justify-content-between">
+                        <div class="d-flex flex-row">
+                          <div>
+                            <img
+                              src="https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-profiles/avatar-2.webp"
+                              alt="Generic placeholder image"
+                              class="d-flex align-self-center me-3 img-fluid rounded-circle border border-dark border-3"
+                              width="60">
+                            <span class="badge bg-warning badge-dot"></span>
+                          </div>
+                          <div class="pt-1">
+                            <p class="fw-bold mb-0" id="warna-tema">Permata Indah</p>
+                            <p class="small text-muted">Hallo kak Selamat datang...</p>
+                          </div>
+                        </div>
+                        <div class="pt-1">
+                          <p class="small text-muted mb-1">5 mins ago</p>
+                          <span class="badge rounded-pill float-end" id="warna-tema-bg">2</span>
+                        </div>
+                      </a>
+                    </li>
+                    <li class="p-2 border-bottom list-group-item list-group-item-action border-0 ripple">
+                      <a href="Chat.html" class="d-flex justify-content-between">
+                        <div class="d-flex flex-row">
+                          <div>
+                            <img
+                              src="https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-profiles/avatar-2.webp"
+                              alt="Generic placeholder image"
+                              class="d-flex align-self-center me-3 img-fluid rounded-circle border border-dark border-3"
+                              width="60">
+                            <span class="badge bg-success badge-dot"></span>
+                          </div>
+                          <div class="pt-1">
+                            <p class="fw-bold mb-0" id="warna-tema">Agung Style</p>
+                            <p class="small text-muted">Iya kak</p>
+                          </div>
+                        </div>
+                        <div class="pt-1">
+                          <p class="small text-muted mb-1">Yesterday</p>
+                        </div>
+                      </a>
+                    </li>
+                    <li class="p-2 border-bottom list-group-item list-group-item-action border-0 ripple">
+                      <a href="Chat.html" class="d-flex justify-content-between">
+                        <div class="d-flex flex-row">
+                          <div>
+                            <img
+                              src="https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-profiles/avatar-2.webp"
+                              alt="Generic placeholder image"
+                              class="d-flex align-self-center me-3 img-fluid rounded-circle border border-dark border-3"
+                              width="60">
+                            <span class="badge bg-danger badge-dot"></span>
+                          </div>
+                          <div class="pt-1">
+                            <p class="fw-bold mb-0" id="warna-tema">Toko Olahraga Pusat</p>
+                            <p class="small text-muted">Yang warna merah kosong kak</p>
+                          </div>
+                        </div>
+                        <div class="pt-1">
+                          <p class="small text-muted mb-1">Yesterday</p>
+                        </div>
+                      </a>
+                    </li>
+                    <li class="p-2 border-bottom list-group-item list-group-item-action border-0 ripple">
+                      <a href="Chat.html" class="d-flex justify-content-between">
+                        <div class="d-flex flex-row">
+                          <div>
+                            <img
+                              src="https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-profiles/avatar-2.webp"
+                              alt="Generic placeholder image"
+                              class="d-flex align-self-center me-3 img-fluid rounded-circle border border-dark border-3"
+                              width="60">
+                            <span class="badge bg-warning badge-dot"></span>
+                          </div>
+                          <div class="pt-1">
+                            <p class="fw-bold mb-0" id="warna-tema">Cute Shop</p>
+                            <p class="small text-muted">Stok habis mohom maaf</p>
+                          </div>
+                        </div>
+                        <div class="pt-1">
+                          <p class="small text-muted mb-1">Yesterday</p>
+                        </div>
+                      </a>
+                    </li>
+                    <li class="p-2 border-bottom list-group-item border-0">
+                      <div class="d-flex justify-content-between align-items-center px-3 py-3">
+                        <div class="d-flex align-items-center">
+                          <a href="Chat.html" class="btn btn-outline btn-sm" id="warna-tema">
+                            Lihat Chat
+                          </a>
+                        </div>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+
+              </div>
+
+            </div>
+            <!-- chat dropdown -->
+
+          </ul>
+        </li>
+
+        <!-- profile -->
+        <li class="nav-item dropdown me-3 me-lg-1">
+          <a class="nav-link dropdown-toggle d-sm-flex align-items-sm-center" href="#" id="navbarDropdownMenuLink"
+            role="button" data-mdb-toggle="dropdown" aria-expanded="false">
+            <img src="https://mdbcdn.b-cdn.net/img/new/avatars/1.webp" class="rounded-circle" height="22"
+              alt="Black and White Portrait of a Man" loading="lazy" />
+            <strong class="d-none d-sm-block ms-1">Daniel</strong>
+          </a>
+
+          <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdownMenuLink">
+            <div class="list-group list-group-light">
+              <a href="Profil.html" class="list-group-item list-group-item-action px-3 border-0 ripple">
+                <div class="fw-bold">Show Profile</div>
+              </a>
+              <a href="../index.html" class="list-group-item list-group-item-action px-3 border-0 ripple">
+                <div class="fw-bold">Logout</div>
+              </a>
+            </div>
+          </ul>
+        </li>
+      </ul>
+      <!-- Right elements -->
+    </div>
+  </nav>
+  <!-- Navbar BOT-->
+
+  <!-- Navbar TOP-->
+  <nav class="navbar navbar-expand-sm fixed-top" id="navbartop" style="margin-top: -5px; margin-bottom: -10px">
+    <div class=" container-fluid justify-content-between mx-5">
+      <!-- Left elements -->
+      <div class="d-flex">
+
+      </div>
+      <div class="collapse navbar-collapse flex-row" id="navbarTogglerDemo02">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <nav aria-label="breadcrumb">
+            <ol class="breadcrumb">
+              <li class="breadcrumb-item">
+                <a href="#" class="text-white">Lavaca Home Stay</a>
+              </li>
+              <li class="breadcrumb-item">
+                <a href="#" class="text-white">L Tim</a>
+              </li>
+            </ol>
+          </nav>
+        </ul>
+      </div>
+      <!-- Left elements -->
+
+      <!-- Center elements -->
+
+      <!-- Center elements -->
+
+      <!-- Right elements -->
+
+      <div class="flex-row">
+        <ul class="collapse navbar-collapse navbar-nav me-auto mb-2 mb-lg-0" id="navbarTogglerDemo02">
+          <nav aria-label="breadcrumb">
+            <ol class="breadcrumb bread">
+              <li class="breadcrumb-item">
+                <a href="#" class="text-white">Tentang</a>
+              </li>
+              <li class="breadcrumb-item active" aria-current="page">
+                <a href="#" class="text-white">Bantuan</a>
+              </li>
+            </ol>
+          </nav>
+        </ul>
+        <button class="navbar-toggler" type="button" data-mdb-toggle="collapse" data-mdb-target="#navbarTogglerDemo02"
+          aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+          <i class="fas fa-bars"></i>
+        </button>
+      </div>
+      <!-- Right elements -->
+    </div>
+  </nav>
+  <!-- Navbar TOP -->
+
+  <section class="h-100 h-custom mt-5" style="background-color: #fcfcfc;">
+    <div class="container py-5 h-100" style="margin-top: 70px;">
+      <div class="row d-flex justify-content-center align-items-center h-100">
+        <div class="col">
+
+
+          <div class="row">
+
+            <div class="col-lg-9">
+              <h5 class="mb-3"><a href="Home.html" class="text-body" data-aos="zoom-out-right">
+                  <i class="fas fa-long-arrow-alt-left me-2"></i>Continue shopping</a>
+              </h5>
+              <hr>
+
+              <div class="d-flex justify-content-between align-items-center mb-4">
+                <div>
+                  <p class="mb-1">Shopping cart</p>
+                  <p class="mb-0">You have 4 items in your cart</p>
+                </div>
+                <div>
+                  <p class="mb-0"><span class="text-muted">Sort by:</span> <a href="#!" class="text-body">price <i
+                        class="fas fa-angle-down mt-1"></i></a></p>
+                </div>
+              </div>
+
+              <div class="card rounded-3 mb-4">
+                <div class="card-body p-4">
+                  <div class="row d-flex justify-content-between align-items-center">
+                    <div class="col-md-2 col-lg-2 col-xl-2">
+                      <img
+                        src="https://cdn.eraspace.com/media/catalog/product/i/p/iphone_14_pro_max_deep_purple_1_6.jpg"
+                        class="img-fluid rounded-3" alt="Cotton T-shirt">
+                    </div>
+                    <div class="col-md-3 col-lg-3 col-xl-3">
+                      <p class="lead fw-normal mb-2">Apple iPhone 14 Pro Max 128GB 256GB 512GB 1TB Dual Nano IBOX RESMI
+                      </p>
+                      <p><span class="text-muted">Color: </span>Space Black</p>
+                    </div>
+                    <div class="col-md-3 col-lg-3 col-xl-2 d-flex" style="width: 130px;">
+                      <button class="btn btn-link px-2"
+                        onclick="this.parentNode.querySelector('input[type=number]').stepDown()">
+                        <i class="fas fa-minus"></i>
+                      </button>
+
+                      <input id="form1" min="0" name="quantity" value="1" type="number"
+                        class="form-control form-control-sm" readonly />
+
+                      <button class="btn btn-link px-2"
+                        onclick="this.parentNode.querySelector('input[type=number]').stepUp()">
+                        <i class="fas fa-plus"></i>
+                      </button>
+                    </div>
+                    <div class="col-md-3 col-lg-2 col-xl-2 offset-lg-1 mt-2" style="width: 180px;">
+                      <h5 class="mb-0">Rp25.000.000</h5>
+                    </div>
+                    <div class="col-md-1 col-lg-1 col-xl-1 text-end">
+                      <a href="#!" class="text-danger"><i class="fas fa-trash fa-lg"></i></a>
+                    </div>
+                    <div class="col-md-1 col-lg-1 col-xl-1 text-end">
+                      <input class="form-check-input" type="checkbox" id="checkboxNoLabel" value="" aria-label="..." />
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="card rounded-3 mb-4">
+                <div class="card-body p-4">
+                  <div class="row d-flex justify-content-between align-items-center">
+                    <div class="col-md-2 col-lg-2 col-xl-2">
+                      <img src="https://mdbootstrap.com/img/new/avatars/8.jpg" class="img-fluid rounded-3"
+                        alt="Cotton T-shirt">
+                    </div>
+                    <div class="col-md-3 col-lg-3 col-xl-3">
+                      <p class="lead fw-normal mb-2">CROP TOP LENGAN PENDEK ukuran dewasa | Model Baju Pria
+                      </p>
+                      <p><span class="text-muted">Color: </span>Black</p>
+                    </div>
+                    <div class="col-md-3 col-lg-3 col-xl-2 d-flex" style="width: 130px;">
+                      <button class="btn btn-link px-2"
+                        onclick="this.parentNode.querySelector('input[type=number]').stepDown()">
+                        <i class="fas fa-minus"></i>
+                      </button>
+
+                      <input id="form1" min="0" name="quantity" value="1" type="number"
+                        class="form-control form-control-sm" readonly />
+
+                      <button class="btn btn-link px-2"
+                        onclick="this.parentNode.querySelector('input[type=number]').stepUp()">
+                        <i class="fas fa-plus"></i>
+                      </button>
+                    </div>
+                    <div class="col-md-3 col-lg-2 col-xl-2 offset-lg-1 mt-2" style="width: 180px;">
+                      <h5 class="mb-0">Rp250.000</h5>
+                    </div>
+                    <div class="col-md-1 col-lg-1 col-xl-1 text-end">
+                      <a href="#!" class="text-danger"><i class="fas fa-trash fa-lg"></i></a>
+                    </div>
+                    <div class="col-md-1 col-lg-1 col-xl-1 text-end">
+                      <input class="form-check-input" type="checkbox" id="checkboxNoLabel" value="" aria-label="..." />
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+
+            <!--             Bagian Kanan -->
+            <div class="col-lg-3">
+
+              <div class="card text-white rounded-3" id="warna-tema-bg">
+                <div class="card-body">
+                  <div class="d-flex justify-content-between align-items-center mb-4">
+                    <h5 class="mb-0">Total Belanja</h5>
+                  </div>
+
+                  <hr class="my-4">
+
+                  <div class="d-flex justify-content-between">
+                    <p class="mb-2">Jumlah Barang</p>
+                    <p class="mb-2">1</p>
+                  </div>
+
+                  <div class="d-flex justify-content-between mb-4">
+                    <p class="mb-2">Total harga</p>
+                    <p class="mb-2">Rp25.000.000</p>
+                  </div>
+
+                  <a href="Checkout.html" class="btn btn-dark btn-block btn-lg">
+                    <div class="d-flex justify-content-between">
+                      <span>Rp25.000.000</span>
+                      <span>Checkout <i class="fas fa-long-arrow-alt-right ms-2"></i></span>
+                    </div>
+                  </a>
+
+                </div>
+              </div>
+
+            </div>
+
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <hr class="hr hr-blurry" style="height: 2px; background-color: #C70092;" />
+
+  <!--   Content Card Produk hanya untukmu -->
+  <div class="container-sm mt-4">
+    <div class="py-4 d-flex flex-row" data-aos="zoom-out-right">
+      <h3><b>Rekomendasi</b></h3>
+      <span class="ps-2 pt-2">
+        <a href="Pencarian.html">
+          <b id="warna-tema">Lebih banyak</b>
+        </a>
+      </span>
+    </div>
+
+    <!--Section: Products-->
+    <section class="text-center">
+      <div class="row">
+        <div class="col-6 col-md-3 mb-3">
+          <div class="bg-image card hover-overlay ripple" data-mdb-ripple-color="dark">
+            <img src="https://cdn.eraspace.com/media/catalog/product/i/p/iphone_14_pro_max_deep_purple_1_6.jpg"
+              class="card-img-top p-2">
+            <div class="card-body">
+              <h5 class="card-title mb-3">Apple Iphone 14 ProMax 64GB</h5>
+
+              <p class="card-text">
+                <span class="badge badge-info me-2">Cashback</span>
+                <span class="badge badge-success">Diskon 50%</span>
+              </p>
+              <p class="card-text">
+                <span class="card-text"><strong>Rp.25.000.000</strong></span>
+                <span class="card-text"><small>1RB+ Terjual</small></span>
+              </p>
+              <a href="Produk.html">
+                <div class="mask" style="background-color: hsla(0, 0%, 98%, 0.2)"></div>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="col-6 col-md-3 mb-3">
+          <div class="bg-image card hover-overlay ripple" data-mdb-ripple-color="dark">
+            <img src="https://cdn.eraspace.com/media/catalog/product/i/p/iphone_14_pro_max_deep_purple_1_6.jpg"
+              class="card-img-top p-2">
+            <div class="card-body">
+              <h5 class="card-title mb-3">Apple Iphone 14 ProMax 64GB</h5>
+
+              <p class="card-text">
+                <span class="badge badge-info me-2">Cashback</span>
+                <span class="badge badge-success">Diskon 50%</span>
+              </p>
+              <p class="card-text">
+                <span class="card-text"><strong>Rp.25.000.000</strong></span>
+                <span class="card-text"><small>1RB+ Terjual</small></span>
+              </p>
+              <a href="Produk.html">
+                <div class="mask" style="background-color: hsla(0, 0%, 98%, 0.2)"></div>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="col-6 col-md-3 mb-3">
+          <div class="bg-image card hover-overlay ripple" data-mdb-ripple-color="dark">
+            <img src="https://cdn.eraspace.com/media/catalog/product/i/p/iphone_14_pro_max_deep_purple_1_6.jpg"
+              class="card-img-top p-2">
+            <div class="card-body">
+              <h5 class="card-title mb-3">Apple Iphone 14 ProMax 64GB</h5>
+
+              <p class="card-text">
+                <span class="badge badge-info me-2">Cashback</span>
+                <span class="badge badge-success">Diskon 50%</span>
+              </p>
+              <p class="card-text">
+                <span class="card-text"><strong>Rp.25.000.000</strong></span>
+                <span class="card-text"><small>1RB+ Terjual</small></span>
+              </p>
+              <a href="Produk.html">
+                <div class="mask" style="background-color: hsla(0, 0%, 98%, 0.2)"></div>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="col-6 col-md-3 mb-3">
+          <div class="bg-image card hover-overlay ripple" data-mdb-ripple-color="dark">
+            <img src="https://cdn.eraspace.com/media/catalog/product/i/p/iphone_14_pro_max_deep_purple_1_6.jpg"
+              class="card-img-top p-2">
+            <div class="card-body">
+              <h5 class="card-title mb-3">Apple Iphone 14 ProMax 64GB</h5>
+
+              <p class="card-text">
+                <span class="badge badge-info me-2">Cashback</span>
+                <span class="badge badge-success">Diskon 50%</span>
+              </p>
+              <p class="card-text">
+                <span class="card-text"><strong>Rp.25.000.000</strong></span>
+                <span class="card-text"><small>1RB+ Terjual</small></span>
+              </p>
+              <a href="Produk.html">
+                <div class="mask" style="background-color: hsla(0, 0%, 98%, 0.2)"></div>
+              </a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="row">
+        <div class="col-6 col-md-3 mb-3">
+          <div class="bg-image card hover-overlay ripple" data-mdb-ripple-color="dark">
+            <img src="https://cdn.eraspace.com/media/catalog/product/i/p/iphone_14_pro_max_deep_purple_1_6.jpg"
+              class="card-img-top p-2">
+            <div class="card-body">
+              <h5 class="card-title mb-3">Apple Iphone 14 ProMax 64GB</h5>
+
+              <p class="card-text">
+                <span class="badge badge-info me-2">Cashback</span>
+                <span class="badge badge-success">Diskon 50%</span>
+              </p>
+              <p class="card-text">
+                <span class="card-text"><strong>Rp.25.000.000</strong></span>
+                <span class="card-text"><small>1RB+ Terjual</small></span>
+              </p>
+              <a href="Produk.html">
+                <div class="mask" style="background-color: hsla(0, 0%, 98%, 0.2)"></div>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="col-6 col-md-3 mb-3">
+          <div class="bg-image card hover-overlay ripple" data-mdb-ripple-color="dark">
+            <img src="https://cdn.eraspace.com/media/catalog/product/i/p/iphone_14_pro_max_deep_purple_1_6.jpg"
+              class="card-img-top p-2">
+            <div class="card-body">
+              <h5 class="card-title mb-3">Apple Iphone 14 ProMax 64GB</h5>
+
+              <p class="card-text">
+                <span class="badge badge-info me-2">Cashback</span>
+                <span class="badge badge-success">Diskon 50%</span>
+              </p>
+              <p class="card-text">
+                <span class="card-text"><strong>Rp.25.000.000</strong></span>
+                <span class="card-text"><small>1RB+ Terjual</small></span>
+              </p>
+              <a href="Produk.html">
+                <div class="mask" style="background-color: hsla(0, 0%, 98%, 0.2)"></div>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="col-6 col-md-3 mb-3">
+          <div class="bg-image card hover-overlay ripple" data-mdb-ripple-color="dark">
+            <img src="https://cdn.eraspace.com/media/catalog/product/i/p/iphone_14_pro_max_deep_purple_1_6.jpg"
+              class="card-img-top p-2">
+            <div class="card-body">
+              <h5 class="card-title mb-3">Apple Iphone 14 ProMax 64GB</h5>
+
+              <p class="card-text">
+                <span class="badge badge-info me-2">Cashback</span>
+                <span class="badge badge-success">Diskon 50%</span>
+              </p>
+              <p class="card-text">
+                <span class="card-text"><strong>Rp.25.000.000</strong></span>
+                <span class="card-text"><small>1RB+ Terjual</small></span>
+              </p>
+              <a href="Produk.html">
+                <div class="mask" style="background-color: hsla(0, 0%, 98%, 0.2)"></div>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="col-6 col-md-3 mb-3">
+          <div class="bg-image card hover-overlay ripple" data-mdb-ripple-color="dark">
+            <img src="https://cdn.eraspace.com/media/catalog/product/i/p/iphone_14_pro_max_deep_purple_1_6.jpg"
+              class="card-img-top p-2">
+            <div class="card-body">
+              <h5 class="card-title mb-3">Apple Iphone 14 ProMax 64GB</h5>
+
+              <p class="card-text">
+                <span class="badge badge-info me-2">Cashback</span>
+                <span class="badge badge-success">Diskon 50%</span>
+              </p>
+              <p class="card-text">
+                <span class="card-text"><strong>Rp.25.000.000</strong></span>
+                <span class="card-text"><small>1RB+ Terjual</small></span>
+              </p>
+              <a href="Produk.html">
+                <div class="mask" style="background-color: hsla(0, 0%, 98%, 0.2)"></div>
+              </a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+    <!--Section: Products-->
+  </div>
+  <hr class="hr hr-blurry" style="height: 2px; background-color: #C70092;" />
+  <!--   Content Produk Hanya untukmu
+
+  <!--   Konten Carosel Card Geser Diskon -->
+  <div class="container-sm mt-4">
+    <div class="py-4 d-flex flex-row" data-aos="zoom-out-right">
+      <h3><b>Diskon Spesial</b></h3>
+    </div>
+
+    <!-- Carousel wrapper -->
+    <div id="carouselMultiItemExample" class="carousel slide carousel-dark text-center" data-mdb-ride="carousel">
+      <!-- Controls -->
+      <div class="d-flex justify-content-center mb-4">
+        <button class="carousel-control-prev position-relative" type="button"
+          data-mdb-target="#carouselMultiItemExample" data-mdb-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next position-relative" type="button"
+          data-mdb-target="#carouselMultiItemExample" data-mdb-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+      <!-- Inner -->
+      <div class="carousel-inner py-4">
+        <!-- Single item -->
+        <div class="carousel-item active">
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-4">
+                <div class="card">
+                  <img src="https://cdn-brilio-net.akamaized.net/news/2015/09/26/18989/57372-alat-musik-indonesia.jpg"
+                    class="card-img-top" />
+                  <div class="card-body">
+                    <h5 class="card-title">Guitar Fender PCX45</h5>
+                    <p class="card-text">
+                      <span class="badge badge-info me-2">Cashback</span>
+                      <span class="badge badge-success">Diskon 50%</span>
+                      <span class="badge badge-warning">Gratis Ongkir</span>
+                      <span class="badge badge-danger">COD</span>
+                    </p>
+                    <p class="card-text">
+                      <span class="card-text"><strong>Rp.25.000.000</strong></span>
+                      <span class="card-text"><small>1RB+ Terjual</small></span>
+                    </p>
+                    <a href="Produk.html" class="btn text-light" id="warna-tema-bg">Lihat</a>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-lg-4 d-none d-lg-block">
+                <div class="card">
+                  <img src="https://cdn-brilio-net.akamaized.net/news/2015/09/26/18989/57372-alat-musik-indonesia.jpg"
+                    class="card-img-top" alt="Sunset Over the Sea" />
+                  <div class="card-body">
+                    <h5 class="card-title">Guitar Fender PCX45</h5>
+                    <p class="card-text">
+                      <span class="badge badge-info me-2">Cashback</span>
+                      <span class="badge badge-success">Diskon 50%</span>
+                      <span class="badge badge-warning">Gratis Ongkir</span>
+                      <span class="badge badge-danger">COD</span>
+                    </p>
+                    <p class="card-text">
+                      <span class="card-text"><strong>Rp.25.000.000</strong></span>
+                      <span class="card-text"><small>1RB+ Terjual</small></span>
+                    </p>
+                    <a href="Produk.html" class="btn text-light" id="warna-tema-bg">Lihat</a>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-lg-4 d-none d-lg-block">
+                <div class="card">
+                  <img src="https://cdn-brilio-net.akamaized.net/news/2015/09/26/18989/57372-alat-musik-indonesia.jpg"
+                    class="card-img-top" alt="Sunset over the Sea" />
+                  <div class="card-body">
+                    <h5 class="card-title">Guitar Fender PCX45</h5>
+                    <p class="card-text">
+                      <span class="badge badge-info me-2">Cashback</span>
+                      <span class="badge badge-success">Diskon 50%</span>
+                      <span class="badge badge-warning">Gratis Ongkir</span>
+                      <span class="badge badge-danger">COD</span>
+                    </p>
+                    <p class="card-text">
+                      <span class="card-text"><strong>Rp.25.000.000</strong></span>
+                      <span class="card-text"><small>1RB+ Terjual</small></span>
+                    </p>
+                    <a href="Produk.html" class="btn text-light" id="warna-tema-bg">Lihat</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Single item -->
+        <div class="carousel-item">
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-4 col-md-12">
+                <div class="card">
+                  <img src="https://cdn-brilio-net.akamaized.net/news/2015/09/26/18989/57372-alat-musik-indonesia.jpg"
+                    class="card-img-top" alt="Fissure in Sandstone" />
+                  <div class="card-body">
+                    <h5 class="card-title">Guitar Fender PCX45</h5>
+                    <p class="card-text">
+                      <span class="badge badge-info me-2">Cashback</span>
+                      <span class="badge badge-success">Diskon 50%</span>
+                      <span class="badge badge-warning">Gratis Ongkir</span>
+                      <span class="badge badge-danger">COD</span>
+                    </p>
+                    <p class="card-text">
+                      <span class="card-text"><strong>Rp.25.000.000</strong></span>
+                      <span class="card-text"><small>1RB+ Terjual</small></span>
+                    </p>
+                    <a href="Produk.html" class="btn text-light" id="warna-tema-bg">Lihat</a>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-lg-4 d-none d-lg-block">
+                <div class="card">
+                  <img src="https://cdn-brilio-net.akamaized.net/news/2015/09/26/18989/57372-alat-musik-indonesia.jpg"
+                    class="card-img-top" alt="Storm Clouds" />
+                  <div class="card-body">
+                    <h5 class="card-title">Guitar Fender PCX45</h5>
+                    <p class="card-text">
+                      <span class="badge badge-info me-2">Cashback</span>
+                      <span class="badge badge-success">Diskon 50%</span>
+                      <span class="badge badge-warning">Gratis Ongkir</span>
+                      <span class="badge badge-danger">COD</span>
+                    </p>
+                    <p class="card-text">
+                      <span class="card-text"><strong>Rp.25.000.000</strong></span>
+                      <span class="card-text"><small>1RB+ Terjual</small></span>
+                    </p>
+                    <a href="Produk.html" class="btn text-light" id="warna-tema-bg">Lihat</a>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-lg-4 d-none d-lg-block">
+                <div class="card">
+                  <img src="https://cdn-brilio-net.akamaized.net/news/2015/09/26/18989/57372-alat-musik-indonesia.jpg"
+                    class="card-img-top" alt="Hot Air Balloons" />
+                  <div class="card-body">
+                    <h5 class="card-title">Guitar Fender PCX45</h5>
+                    <p class="card-text">
+                      <span class="badge badge-info me-2">Cashback</span>
+                      <span class="badge badge-success">Diskon 50%</span>
+                      <span class="badge badge-warning">Gratis Ongkir</span>
+                      <span class="badge badge-danger">COD</span>
+                    </p>
+                    <p class="card-text">
+                      <span class="card-text"><strong>Rp.25.000.000</strong></span>
+                      <span class="card-text"><small>1RB+ Terjual</small></span>
+                    </p>
+                    <a href="Produk.html" class="btn text-light" id="warna-tema-bg">Lihat</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Single item -->
+        <div class="carousel-item">
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-4 col-md-12 mb-4 mb-lg-0">
+                <div class="card">
+                  <img src="https://cdn-brilio-net.akamaized.net/news/2015/09/26/18989/57372-alat-musik-indonesia.jpg"
+                    class="card-img-top" alt="Peaks Against the Starry Sky" />
+                  <div class="card-body">
+                    <h5 class="card-title">Guitar Fender PCX45</h5>
+                    <p class="card-text">
+                      <span class="badge badge-info me-2">Cashback</span>
+                      <span class="badge badge-success">Diskon 50%</span>
+                      <span class="badge badge-warning">Gratis Ongkir</span>
+                      <span class="badge badge-danger">COD</span>
+                    </p>
+                    <p class="card-text">
+                      <span class="card-text"><strong>Rp.25.000.000</strong></span>
+                      <span class="card-text"><small>1RB+ Terjual</small></span>
+                    </p>
+                    <a href="Produk.html" class="btn text-light" id="warna-tema-bg">Lihat</a>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-lg-4 mb-4 mb-lg-0 d-none d-lg-block">
+                <div class="card">
+                  <img src="https://cdn-brilio-net.akamaized.net/news/2015/09/26/18989/57372-alat-musik-indonesia.jpg"
+                    class="card-img-top" alt="Bridge Over Water" />
+                  <div class="card-body">
+                    <h5 class="card-title">Guitar Fender PCX45</h5>
+                    <p class="card-text">
+                      <span class="badge badge-info me-2">Cashback</span>
+                      <span class="badge badge-success">Diskon 50%</span>
+                      <span class="badge badge-warning">Gratis Ongkir</span>
+                      <span class="badge badge-danger">COD</span>
+                    </p>
+                    <p class="card-text">
+                      <span class="card-text"><strong>Rp.25.000.000</strong></span>
+                      <span class="card-text"><small>1RB+ Terjual</small></span>
+                    </p>
+                    <a href="Produk.html" class="btn text-light" id="warna-tema-bg">Lihat</a>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-lg-4 mb-4 mb-lg-0 d-none d-lg-block">
+                <div class="card">
+                  <img src="https://cdn-brilio-net.akamaized.net/news/2015/09/26/18989/57372-alat-musik-indonesia.jpg"
+                    class="card-img-top" alt="Purbeck Heritage Coast" />
+                  <div class="card-body">
+                    <h5 class="card-title">Guitar Fender PCX45</h5>
+                    <p class="card-text">
+                      <span class="badge badge-info me-2">Cashback</span>
+                      <span class="badge badge-success">Diskon 50%</span>
+                      <span class="badge badge-warning">Gratis Ongkir</span>
+                      <span class="badge badge-danger">COD</span>
+                    </p>
+                    <p class="card-text">
+                      <span class="card-text"><strong>Rp.25.000.000</strong></span>
+                      <span class="card-text"><small>1RB+ Terjual</small></span>
+                    </p>
+                    <a href="Produk.html" class="btn text-light" id="warna-tema-bg">Lihat</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Inner -->
+    </div>
+    <!-- Carousel wrapper -->
+  </div>
+  <!--   Konten Carosel Card Geser Diskon -->
+
+  <!-- Footer -->
+  <footer class="text-center text-lg-start bg-white text-muted p-3 p-xl-0">
+    <!-- Section: Social media -->
+    <div class="container-sm mt-4">
+      <section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
+        <!-- Left -->
+        <div class="me-5 d-none d-lg-block">
+          <span>Ikuti Kami:</span>
+        </div>
+        <!-- Left -->
+
+        <!-- Right -->
+        <div>
+          <a href="" class="me-4 link-secondary">
+            <i class="fab fa-facebook-f"></i>
+          </a>
+          <a href="" class="me-4 link-secondary">
+            <i class="fab fa-twitter"></i>
+          </a>
+          <a href="" class="me-4 link-secondary">
+            <i class="fab fa-instagram"></i>
+          </a>
+          <a href="" class="me-4 link-secondary">
+            <i class="fab fa-pinterest"></i>
+          </a>
+          <a href="" class="me-4 link-secondary">
+            <i class="fab fa-linkedin"></i>
+          </a>
+        </div>
+        <!-- Right -->
+      </section>
+      <!-- Section: Social media -->
+    </div>
+
+    <!-- Section: Links  -->
+    <section class="">
+      <div class="container-md text-md-start mt-5">
+        <!-- Grid row -->
+        <div class="row mt-3">
+          <!-- Grid column -->
+          <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+            <!-- Content -->
+            <h6 class="text-uppercase fw-bold mb-4">
+              <i class="fas fa-gem me-3 text-secondary" style="text-align: center;"></i>Lavaca
+            </h6>
+            <p style="text-align: justify;">
+              Dengan visi untuk menjadi online shop terpercaya dan terbaik di Indonesia, Lavanca selalu
+              berusaha
+              memberikan pengalaman belanja yang nyaman dan aman bagi pelanggannya.
+            </p>
+          </div>
+          <!-- Grid column -->
+
+          <!-- Grid column -->
+          <div class="col-md-2 col-lg-2 col-xl-2 mx-auto text-left mb-4">
+            <!-- Links -->
+            <h6 class="text-uppercase fw-bold mb-4">
+              Jelajahi
+            </h6>
+            <p>
+              <a href="#!" class="text-reset">Tentang Lavaca</a>
+            </p>
+            <p>
+              <a href="#!" class="text-reset">L tim</a>
+            </p>
+            <p>
+              <a href="#!" class="text-reset">Kebijakan Lavaca</a>
+            </p>
+            <p>
+              <a href="#!" class="text-reset">Kebijakan privasi</a>
+            </p>
+          </div>
+          <!-- Grid column -->
+
+          <!-- Grid column -->
+          <div class="col-md-3 col-lg-2 col-xl-2 mx-auto text-left mb-4">
+            <!-- Links -->
+            <h6 class="text-uppercase fw-bold mb-4">
+              Layanan
+            </h6>
+            <p>
+              <a href="#!" class="text-reset">Bantuan</a>
+            </p>
+            <p>
+              <a href="#!" class="text-reset">Checkout</a>
+            </p>
+            <p>
+              <a href="#!" class="text-reset">LavacaPay</a>
+            </p>
+            <p>
+              <a href="#!" class="text-reset">Garansi</a>
+            </p>
+          </div>
+          <!-- Grid column -->
+
+          <!-- Grid column -->
+          <div class="col-md-4 col-lg-3 col-xl-3 mx-auto text-left mb-md-0 mb-4">
+            <!-- Links -->
+            <h6 class="text-uppercase fw-bold mb-4">Download Lavaca</h6>
+            <p>
+              <a href="#!" class="text-reset">
+                <img src="../Foto/content/playstoredown.png" alt="" style="width: 150px; height: auto"
+                  class="rounded-square" />
+              </a>
+            </p>
+            <p>
+              <a href="#!" class="text-reset">
+                <img src="../Foto/content/appstoredown.png" alt="" style="width: 150px; height: auto"
+                  class="rounded-square" />
+              </a>
+            </p>
+          </div>
+          <!-- Grid column -->
+        </div>
+        <!-- Grid row -->
+      </div>
+    </section>
+    <!-- Section: Links  -->
+
+    <!-- Copyright -->
+    <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.025);">
+      © 2023 Copyright:
+      <a class="text-reset fw-bold" href="https://mdbootstrap.com/">Lavaca.com</a>
+    </div>
+    <!-- Copyright -->
+  </footer>
+  <!-- Footer -->
+  <!-- JavaScript dari assets -->
+  <script src="../assets/script.js"></script>
+  <!-- JavaScript dari assets -->
+  <!-- Init Animasi -->
+  <script>
+    AOS.init();
+  </script>
+  <!-- Init Animasi -->
+</body>
+
+</html>

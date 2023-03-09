@@ -1,0 +1,759 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Font Awesome -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet" />
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" rel="stylesheet" />
+  <!-- MDB -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.1.0/mdb.min.css" rel="stylesheet" />
+  <!-- MDB javascript-->
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.1.0/mdb.min.js"></script>
+  <!-- CSS Animate On Scroll Library -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <!-- JavaScript Animate On Scroll Library -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <!-- CSS dari assets -->
+  <link rel="stylesheet" href="../assets/style.css">
+  <!-- CSS Media Query dari assets -->
+  <link rel="stylesheet" href="../assets/mobileStyle.css">
+
+  <script src="../assets/sc"></script>
+  <title>Checkout</title>
+</head>
+
+<body>
+  <!--   Button back to top -->
+  <button type="button" class="btn btn-danger btn-floating btn-lg" id="btn-back-to-top">
+    <i class="fas fa-arrow-up"></i>
+  </button>
+  <!--   Button back to top -->
+
+  <!-- Navbar BOT-->
+  <nav class="navbar navbar-expand-lg fixed-top fixed-top-2" id="navbarbot">
+    <div class=" container-fluid justify-content-between mx-5">
+      <!-- Left elements -->
+      <div class="d-flex">
+        <!-- Brand -->
+        <a class="navbar-brand me-2 mb-1 d-flex align-items-center" href="Home.html">
+          <img src="../Foto/content/Lavaca.png" width="75" alt="Lavaca Logo" loading="lazy" style="margin-top: -15px" />
+        </a>
+      </div>
+      <!-- Search form -->
+      <form class="navbar-nav flex-row input-group w-50 me-lg-1">
+        <input type="search" class="form-control" placeholder="Cari produk" aria-label="Search" width="100" />
+        <a href="Pencarian.html" class="btn btn-outline text-light" data-mdb-ripple-color="dark" id="warna-tema-bg">
+          Search
+        </a>
+      </form>
+      <!-- Search form -->
+      <!-- Left elements -->
+
+      <!-- Center elements -->
+      <div class="collapse navbar-collapse">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link" href="#">Handphone</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Laptop</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Kalung</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Nike</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Kaos</a>
+          </li>
+        </ul>
+      </div>
+      <!-- Center elements -->
+
+      <!-- Right elements -->
+
+      <ul class="navbar-nav flex-row">
+        <li class="nav-item dropdown me-3 me-lg-1">
+          <a class="nav-link dropdown-toggle hidden-arrow" href="#" id="navbarDropdownMenuLink" role="button"
+            data-mdb-toggle="dropdown" aria-expanded="false">
+            <i class="fas fa-shopping-bag fa-lg"></i>
+            <span class="badge rounded-pill badge-notification bg-danger">6</span>
+          </a>
+
+          <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdownMenuLink" style="width: 300px;">
+            <div class="list-group list-group-light">
+              <a href="Keranjang.html" class="list-group-item list-group-item-action px-3 border-0 ripple">
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="d-flex align-items-center">
+                    <img src="https://cdn.eraspace.com/media/catalog/product/i/p/iphone_14_pro_max_deep_purple_1_6.jpg"
+                      alt="" style="width: 45px; height: 45px" class="rounded-square" />
+                    <div class="ms-3">
+                      <p class="fw-bold mb-1">Iphone</p>
+                      <p class="text-muted mb-0">1 Pcs</p>
+                    </div>
+                  </div>
+                  <span class="badge rounded-pill badge-success">Rp25.000.000</span>
+                </div>
+              </a>
+              <a href="Keranjang.html" class="list-group-item list-group-item-action px-3 border-0 ripple">
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="d-flex align-items-center">
+                    <img src="https://mdbootstrap.com/img/new/avatars/8.jpg" alt="" style="width: 45px; height: 45px"
+                      class="rounded-square" />
+                    <div class="ms-3">
+                      <p class="fw-bold mb-1">Crop Top Pakaian</p>
+                      <p class="text-muted mb-0">1 Pcs</p>
+                    </div>
+                  </div>
+                  <span class="badge rounded-pill badge-success">Rp250.000</span>
+                </div>
+              </a>
+              <div class="d-flex justify-content-between align-items-center px-3 py-3">
+                <div class="d-flex align-items-center">
+                  <a href="Keranjang.html" class="btn btn-outline btn-sm" id="warna-tema">
+                    Lihat Keranjang
+                  </a>
+                </div>
+              </div>
+            </div>
+          </ul>
+        </li>
+
+        <li class="nav-item dropdown me-3 me-lg-1   ">
+          <a class="nav-link dropdown-toggle hidden-arrow" href="#" id="navbarDropdownMenuLink" role="button"
+            data-mdb-toggle="dropdown" aria-expanded="false">
+            <i class="fas fa-comments fa-lg"></i>
+            <span class="badge rounded-pill badge-notification bg-danger">6</span>
+          </a>
+
+          <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdownMenuLink" style="width: auto;">
+            <!-- chat dropdown -->
+            <div class="list-group list-group-light">
+
+              <div class="p-3">
+                <div data-mdb-perfect-scrollbar="true" style="position: relative; width: 400px">
+                  <ul class="list-unstyled mb-0">
+                    <li class="p-2 border-bottom list-group-item list-group-item-action border-0 ripple">
+                      <a href="Chat.html" class="d-flex justify-content-between">
+                        <div class="d-flex flex-row">
+                          <div>
+                            <img
+                              src="https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-profiles/avatar-2.webp"
+                              alt="Generic placeholder image"
+                              class="d-flex align-self-center me-3 img-fluid rounded-circle border border-dark border-3"
+                              width="60">
+                            <span class="badge bg-success badge-dot"></span>
+                          </div>
+                          <div class="pt-1">
+                            <p class="fw-bold mb-0" id="warna-tema">Sanjaya Shop</p>
+                            <p class="small text-muted">Hallo kak Selamat datang...</p>
+                          </div>
+                        </div>
+                        <div class="pt-1">
+                          <p class="small text-muted mb-1">Just now</p>
+                          <span class="badge rounded-pill float-end" id="warna-tema-bg">2</span>
+                        </div>
+                      </a>
+                    </li>
+                    <li class="p-2 border-bottom list-group-item list-group-item-action border-0 ripple">
+                      <a href="Chat.html" class="d-flex justify-content-between">
+                        <div class="d-flex flex-row">
+                          <div>
+                            <img
+                              src="https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-profiles/avatar-2.webp"
+                              alt="Generic placeholder image"
+                              class="d-flex align-self-center me-3 img-fluid rounded-circle border border-dark border-3"
+                              width="60">
+                            <span class="badge bg-warning badge-dot"></span>
+                          </div>
+                          <div class="pt-1">
+                            <p class="fw-bold mb-0" id="warna-tema">Permata Indah</p>
+                            <p class="small text-muted">Hallo kak Selamat datang...</p>
+                          </div>
+                        </div>
+                        <div class="pt-1">
+                          <p class="small text-muted mb-1">5 mins ago</p>
+                          <span class="badge rounded-pill float-end" id="warna-tema-bg">2</span>
+                        </div>
+                      </a>
+                    </li>
+                    <li class="p-2 border-bottom list-group-item list-group-item-action border-0 ripple">
+                      <a href="Chat.html" class="d-flex justify-content-between">
+                        <div class="d-flex flex-row">
+                          <div>
+                            <img
+                              src="https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-profiles/avatar-2.webp"
+                              alt="Generic placeholder image"
+                              class="d-flex align-self-center me-3 img-fluid rounded-circle border border-dark border-3"
+                              width="60">
+                            <span class="badge bg-success badge-dot"></span>
+                          </div>
+                          <div class="pt-1">
+                            <p class="fw-bold mb-0" id="warna-tema">Agung Style</p>
+                            <p class="small text-muted">Iya kak</p>
+                          </div>
+                        </div>
+                        <div class="pt-1">
+                          <p class="small text-muted mb-1">Yesterday</p>
+                        </div>
+                      </a>
+                    </li>
+                    <li class="p-2 border-bottom list-group-item list-group-item-action border-0 ripple">
+                      <a href="Chat.html" class="d-flex justify-content-between">
+                        <div class="d-flex flex-row">
+                          <div>
+                            <img
+                              src="https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-profiles/avatar-2.webp"
+                              alt="Generic placeholder image"
+                              class="d-flex align-self-center me-3 img-fluid rounded-circle border border-dark border-3"
+                              width="60">
+                            <span class="badge bg-danger badge-dot"></span>
+                          </div>
+                          <div class="pt-1">
+                            <p class="fw-bold mb-0" id="warna-tema">Toko Olahraga Pusat</p>
+                            <p class="small text-muted">Yang warna merah kosong kak</p>
+                          </div>
+                        </div>
+                        <div class="pt-1">
+                          <p class="small text-muted mb-1">Yesterday</p>
+                        </div>
+                      </a>
+                    </li>
+                    <li class="p-2 border-bottom list-group-item list-group-item-action border-0 ripple">
+                      <a href="Chat.html" class="d-flex justify-content-between">
+                        <div class="d-flex flex-row">
+                          <div>
+                            <img
+                              src="https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-profiles/avatar-2.webp"
+                              alt="Generic placeholder image"
+                              class="d-flex align-self-center me-3 img-fluid rounded-circle border border-dark border-3"
+                              width="60">
+                            <span class="badge bg-warning badge-dot"></span>
+                          </div>
+                          <div class="pt-1">
+                            <p class="fw-bold mb-0" id="warna-tema">Cute Shop</p>
+                            <p class="small text-muted">Stok habis mohom maaf</p>
+                          </div>
+                        </div>
+                        <div class="pt-1">
+                          <p class="small text-muted mb-1">Yesterday</p>
+                        </div>
+                      </a>
+                    </li>
+                    <li class="p-2 border-bottom list-group-item border-0">
+                      <div class="d-flex justify-content-between align-items-center px-3 py-3">
+                        <div class="d-flex align-items-center">
+                          <a href="Chat.html" class="btn btn-outline btn-sm" id="warna-tema">
+                            Lihat Chat
+                          </a>
+                        </div>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+
+              </div>
+
+            </div>
+            <!-- chat dropdown -->
+
+          </ul>
+        </li>
+
+        <!-- profile -->
+        <li class="nav-item dropdown me-3 me-lg-1">
+          <a class="nav-link dropdown-toggle d-sm-flex align-items-sm-center" href="#" id="navbarDropdownMenuLink"
+            role="button" data-mdb-toggle="dropdown" aria-expanded="false">
+            <img src="https://mdbcdn.b-cdn.net/img/new/avatars/1.webp" class="rounded-circle" height="22"
+              alt="Black and White Portrait of a Man" loading="lazy" />
+            <strong class="d-none d-sm-block ms-1">Daniel</strong>
+          </a>
+
+          <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdownMenuLink">
+            <div class="list-group list-group-light">
+              <a href="Profil.html" class="list-group-item list-group-item-action px-3 border-0 ripple">
+                <div class="fw-bold">Show Profile</div>
+              </a>
+              <a href="../index.html" class="list-group-item list-group-item-action px-3 border-0 ripple">
+                <div class="fw-bold">Logout</div>
+              </a>
+            </div>
+          </ul>
+        </li>
+      </ul>
+      <!-- Right elements -->
+    </div>
+  </nav>
+  <!-- Navbar BOT-->
+
+  <!-- Navbar TOP-->
+  <nav class="navbar navbar-expand-sm fixed-top" id="navbartop" style="margin-top: -5px; margin-bottom: -10px">
+    <div class=" container-fluid justify-content-between mx-5">
+      <!-- Left elements -->
+      <div class="d-flex">
+
+      </div>
+      <div class="collapse navbar-collapse flex-row" id="navbarTogglerDemo02">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <nav aria-label="breadcrumb">
+            <ol class="breadcrumb">
+              <li class="breadcrumb-item">
+                <a href="#" class="text-white">Lavaca Home Stay</a>
+              </li>
+              <li class="breadcrumb-item">
+                <a href="#" class="text-white">L Tim</a>
+              </li>
+            </ol>
+          </nav>
+        </ul>
+      </div>
+      <!-- Left elements -->
+
+      <!-- Center elements -->
+
+      <!-- Center elements -->
+
+      <!-- Right elements -->
+
+      <div class="flex-row">
+        <ul class="collapse navbar-collapse navbar-nav me-auto mb-2 mb-lg-0" id="navbarTogglerDemo02">
+          <nav aria-label="breadcrumb">
+            <ol class="breadcrumb bread">
+              <li class="breadcrumb-item">
+                <a href="#" class="text-white">Tentang</a>
+              </li>
+              <li class="breadcrumb-item active" aria-current="page">
+                <a href="#" class="text-white">Bantuan</a>
+              </li>
+            </ol>
+          </nav>
+        </ul>
+        <button class="navbar-toggler" type="button" data-mdb-toggle="collapse" data-mdb-target="#navbarTogglerDemo02"
+          aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+          <i class="fas fa-bars"></i>
+        </button>
+      </div>
+      <!-- Right elements -->
+    </div>
+  </nav>
+  <!-- Navbar TOP -->
+
+  <!--   Checkout page  -->
+  <section style="background-color: #fcfcfc;">
+    <div class="container-lg py-5 " style="margin-top: 60px;">
+      <div class="card">
+        <div class="card-body">
+          <div class="row d-flex justify-content-center pb-5">
+            <div class="col-md-7 col-xl-5 mb-4 mb-md-0">
+              <div class="d-flex flex-row">
+                <h5 class="mb-3"><a href="Home.html" class="text-body" data-aos="zoom-out-right">
+                    <i class="fas fa-long-arrow-alt-left me-2"></i>Continue shopping</a>
+                </h5>
+              </div>
+              <div class="py-2 d-flex flex-row">
+                <h5><span class=" far fa-check-square pe-2" style="color:#C70092"></span><b>LAVACA</b> |</h5>
+                <span class=" ps-2">Checkout</span>
+              </div>
+
+              <!-- Alamat  -->
+              <div class="d-flex pt-2">
+                <div>
+                  <p>
+                    <b>Kos <span class="text-success">083728492771</span></b>
+                  </p>
+                </div>
+                <div class="ms-auto" style="color: #C70092;">
+                  <p class="text" style="color: #C70092;">
+                    <i class="fas fa-map-marked-alt pe-1" style="color: #C70092;"></i>Utama
+                  </p>
+                </div>
+              </div>
+              <p>
+                Jl. Mawar, Kec. Margorejo, Kabupaten Pati, Jawa Tengah [Tokopedia Note: Jl. melati no.23, Perumahan
+                Griya Sekarkurung RT 9 RW 3]
+                Margorejo, Kab. Pati, 59163
+              </p>
+
+              <!-- Dialog Ubah Alamat -->
+              <!-- Button trigger modal -->
+              <button type="button" class="btn text-light" data-mdb-toggle="modal" id="warna-tema-bg"
+                data-mdb-target="#exampleModal">
+                Ubah Alamat Pengiriman
+              </button>
+
+              <!-- Modal -->
+              <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                aria-hidden="true">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title" id="exampleModalLabel">Daftar Alamat</h5>
+                      <button type="button" class="btn-close" data-mdb-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                      <div class="mb-2">
+                        <div class="card" style="">
+                          <div class="card-body">
+                            <p class="" style="color:#C70092">
+                              <i class="fas fa-map-marked-alt pe-1" style="color:#C70092"></i>Utama
+                            </p>
+                            <div>
+                              <p>
+                                <b>Kos <span class="text-success">083728492771</span></b>
+                              </p>
+                            </div>
+                            <p class="card-text">
+                              Jl. Mawar, Kec. Margorejo, Kabupaten Pati, Jawa Tengah [Tokopedia Note: Jl. melati no.23,
+                              Perumahan
+                              Griya Sekarkurung RT 9 RW 3]
+                              Margorejo, Kab. Pati, 59163
+                              Kek i alamat kos em wkwkk
+                            </p>
+                            <a href="#" style="color:#C70092" class="card-link">Ubah alamat</a>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="mb-2">
+                        <div class="card">
+                          <div class="card-body">
+                            <div>
+                              <p>
+                                <b>Rumah Blora <span class="text-success">083728492771</span></b>
+                              </p>
+                            </div>
+                            <p class="card-text">
+                              Jl. Jemb. Baru UGM Jl. Pogung Kidul, Pogung Kidul, Sinduadi,
+                              Kec. Sleman, Kabupaten Sleman, Daerah Istimewa Yogyakarta
+                            </p>
+                            <a href="#" style="color:#C70092" class="card-link">Ubah alamat</a>
+                          </div>
+                        </div>
+                      </div>
+
+                      <button type="button" class="btn text-light" id="warna-tema-bg">
+                        Tambah Alamat Pengiriman
+                      </button>
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn" style="color:#C70092" data-mdb-dismiss="modal">Close</button>
+                      <button type="button" class="btn text-light" id="warna-tema-bg">Save changes</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- Dialog Ubah Alamat -->
+              <!-- Alamat  -->
+
+              <hr />
+
+              <!-- Detail produk  -->
+              <div class="pt-2">
+                <div class="d-flex pb-2">
+                  <div>
+                    <p>
+                      <b>Detail Produk <span class="text-success">Sanjaya Shop</span></b>
+                    </p>
+                  </div>
+                  <div class="ms-auto" style="color: #C70092;">
+                    <p class="" id="warna-bg">
+                      <i class="fas fa-map-marked-alt  pe-1"></i>Tangerang Selatan
+                    </p>
+                  </div>
+                </div>
+
+                <!-- Gambar Produk  -->
+                <div class="row d-flex justify-content-start">
+                  <div class="col-12 col-sm-6 col-md-6 col-lg-4">
+                    <img src="https://cdn.eraspace.com/media/catalog/product/i/p/iphone_14_pro_max_deep_purple_1_6.jpg"
+                      class="img-fluid rounded-3" alt="Cotton T-shirt">
+                  </div>
+                  <div class="col-12 col-sm-6 col-md-6 col-lg-4">
+                    <p class="lead fw-normal mb-2">Apple iPhone 14 Pro Max 128GB 256GB 512GB 1TB Dual Nano IBOX RESMI
+                    </p>
+
+                    <div class="d-flex">
+                      <div>
+                        <p><span class="text-muted">Spek: </span>512GB</p>
+                      </div>
+                      <div class="ms-auto">
+                        <p><span class="text-muted">Color: </span>Space Black</p>
+                      </div>
+                    </div>
+                    <div class="d-flex">
+                      <div>
+                        <p><span class="text-muted">Harga: </span>Rp25.000.000</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- Gambar Produk  -->
+                <!-- Detail produk  -->
+              </div>
+            </div>
+
+            <div class="col-md-5 col-xl-4 offset-xl-1">
+              <!-- Pilih jasa pengiriman  -->
+              <div class="d-flex pt-2">
+                <div>
+                  <p>
+                    <b>Jasa Pengiriman</b>
+                  </p>
+                </div>
+              </div>
+
+              <div class="row mb-2">
+                <div class="col-6 col-sm-6 col-md-6">
+                  <select class="form-select" aria-label="Default select example">
+                    <option selected>Reguler</option>
+                    <option value="1">Ekonomi</option>
+                  </select>
+                </div>
+                <div class="col-6 col-sm-6 col-md-6">
+                  <select class="form-select" aria-label="Default select example">
+                    <option selected>JNE Reg (Rp27.000)</option>
+                    <option value="1">SiCepat Reg (Rp22.500)</option>
+                  </select>
+                </div>
+              </div>
+              <!-- Pilih jasa pengiriman  -->
+
+              <!-- Pilih pembayaran  -->
+              <div class="d-flex pt-2">
+                <div>
+                  <p>
+                    <b>Metode Pembayaran</b>
+                  </p>
+                </div>
+              </div>
+
+              <form class="pb-3">
+                <div class="d-flex flex-row pb-3">
+                  <div class="d-flex align-items-center pe-2">
+                    <input class="form-check-input" type="radio" name="radioNoLabel" id="radioNoLabel1" value=""
+                      aria-label="..." checked />
+                  </div>
+                  <div class="rounded border d-flex w-100 p-3 align-items-center">
+                    <p class="mb-0">
+                      <i class="fas fa-money-check-alt fa-lg text-success pe-2"></i>GoPay
+                    </p>
+                    <div class="ms-auto">*********784</div>
+                  </div>
+                </div>
+
+                <div class="d-flex flex-row pb-3">
+                  <div class="d-flex align-items-center pe-2">
+                    <input class="form-check-input" type="radio" name="radioNoLabel" id="radioNoLabel1" value=""
+                      aria-label="..." checked />
+                  </div>
+                  <div class="rounded border d-flex w-100 p-3 align-items-center">
+                    <p class="mb-0">
+                      <i class="fas fa-money-check-alt fa-lg text-info pe-2"></i>OVO CASH
+                    </p>
+                    <div class="ms-auto">*********784</div>
+                  </div>
+                </div>
+
+                <div class="d-flex flex-row pb-3">
+                  <div class="d-flex align-items-center pe-2">
+                    <input class="form-check-input" type="radio" name="radioNoLabel" id="radioNoLabel1" value=""
+                      aria-label="..." checked />
+                  </div>
+                  <div class="rounded border d-flex w-100 p-3 align-items-center">
+                    <p class="mb-0">
+                      <i class="fas fa-credit-card fa-lg text-card pe-2"></i>Credit Card
+                    </p>
+                    <div class="ms-auto">*****************</div>
+                  </div>
+                </div>
+
+                <div class="d-flex flex-row pb-3">
+                  <div class="d-flex align-items-center pe-2">
+                    <input class="form-check-input" type="radio" name="radioNoLabel" id="radioNoLabel1" value=""
+                      aria-label="..." checked />
+                  </div>
+                  <div class="rounded border d-flex w-100 p-3 align-items-center">
+                    <p class="mb-0">
+                      <i class="fab fa-cc-visa fa-lg text-primary pe-2"></i>Visa
+                    </p>
+                  </div>
+                </div>
+              </form>
+              <!-- Pilih pembayaran  -->
+              <div class="rounded d-flex flex-column p-2" style="background-color: #f8f9fa;">
+                <div class="p-2 me-3">
+                  <h4>Checkout Recap</h4>
+                </div>
+                <div class="p-2 d-flex">
+                  <div class="col-8">Harga Produk</div>
+                  <div class="ms-auto">Rp25.000.000</div>
+                </div>
+                <div class="p-2 d-flex">
+                  <div class="col-8">Jasa Pengiriman</div>
+                  <div class="ms-auto">Rp27.000</div>
+                </div>
+
+                <div class="border-top px-2 mx-2"></div>
+                <div class="p-2 d-flex pt-3">
+                  <div class="col-8">Jasa Aplikasi</div>
+                  <div class="ms-auto"><b>Rp500</b></div>
+                </div>
+
+                <div class="border-top px-2 mx-2"></div>
+                <div class="p-2 d-flex pt-3">
+                  <div class="col-8"><b>Total</b></div>
+                  <div class="ms-auto"><b class="text-success">Rp25.027.500</b></div>
+                </div>
+              </div>
+              <input type="button" value="Checkout Sekarang" id="warna-tema-bg"
+                class="btn text-light btn-block btn-lg mt-3" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!--   Checkout page  -->
+
+  <!-- Footer -->
+  <footer class="text-center text-lg-start bg-white text-muted p-3 p-xl-0">
+    <!-- Section: Social media -->
+    <div class="container-sm mt-4">
+      <section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
+        <!-- Left -->
+        <div class="me-5 d-none d-lg-block">
+          <span>Ikuti Kami:</span>
+        </div>
+        <!-- Left -->
+
+        <!-- Right -->
+        <div>
+          <a href="" class="me-4 link-secondary">
+            <i class="fab fa-facebook-f"></i>
+          </a>
+          <a href="" class="me-4 link-secondary">
+            <i class="fab fa-twitter"></i>
+          </a>
+          <a href="" class="me-4 link-secondary">
+            <i class="fab fa-instagram"></i>
+          </a>
+          <a href="" class="me-4 link-secondary">
+            <i class="fab fa-pinterest"></i>
+          </a>
+          <a href="" class="me-4 link-secondary">
+            <i class="fab fa-linkedin"></i>
+          </a>
+        </div>
+        <!-- Right -->
+      </section>
+      <!-- Section: Social media -->
+    </div>
+
+    <!-- Section: Links  -->
+    <section class="">
+      <div class="container-md text-md-start mt-5">
+        <!-- Grid row -->
+        <div class="row mt-3">
+          <!-- Grid column -->
+          <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+            <!-- Content -->
+            <h6 class="text-uppercase fw-bold mb-4">
+              <i class="fas fa-gem me-3 text-secondary" style="text-align: center;"></i>Lavaca
+            </h6>
+            <p style="text-align: justify;">
+              Dengan visi untuk menjadi online shop terpercaya dan terbaik di Indonesia, Lavanca selalu
+              berusaha
+              memberikan pengalaman belanja yang nyaman dan aman bagi pelanggannya.
+            </p>
+          </div>
+          <!-- Grid column -->
+
+          <!-- Grid column -->
+          <div class="col-md-2 col-lg-2 col-xl-2 mx-auto text-left mb-4">
+            <!-- Links -->
+            <h6 class="text-uppercase fw-bold mb-4">
+              Jelajahi
+            </h6>
+            <p>
+              <a href="#!" class="text-reset">Tentang Lavaca</a>
+            </p>
+            <p>
+              <a href="#!" class="text-reset">L tim</a>
+            </p>
+            <p>
+              <a href="#!" class="text-reset">Kebijakan Lavaca</a>
+            </p>
+            <p>
+              <a href="#!" class="text-reset">Kebijakan privasi</a>
+            </p>
+          </div>
+          <!-- Grid column -->
+
+          <!-- Grid column -->
+          <div class="col-md-3 col-lg-2 col-xl-2 mx-auto text-left mb-4">
+            <!-- Links -->
+            <h6 class="text-uppercase fw-bold mb-4">
+              Layanan
+            </h6>
+            <p>
+              <a href="#!" class="text-reset">Bantuan</a>
+            </p>
+            <p>
+              <a href="#!" class="text-reset">Checkout</a>
+            </p>
+            <p>
+              <a href="#!" class="text-reset">LavacaPay</a>
+            </p>
+            <p>
+              <a href="#!" class="text-reset">Garansi</a>
+            </p>
+          </div>
+          <!-- Grid column -->
+
+          <!-- Grid column -->
+          <div class="col-md-4 col-lg-3 col-xl-3 mx-auto text-left mb-md-0 mb-4">
+            <!-- Links -->
+            <h6 class="text-uppercase fw-bold mb-4">Download Lavaca</h6>
+            <p>
+              <a href="#!" class="text-reset">
+                <img src="../Foto/content/playstoredown.png" alt="" style="width: 150px; height: auto"
+                  class="rounded-square" />
+              </a>
+            </p>
+            <p>
+              <a href="#!" class="text-reset">
+                <img src="../Foto/content/appstoredown.png" alt="" style="width: 150px; height: auto"
+                  class="rounded-square" />
+              </a>
+            </p>
+          </div>
+          <!-- Grid column -->
+        </div>
+        <!-- Grid row -->
+      </div>
+    </section>
+    <!-- Section: Links  -->
+
+    <!-- Copyright -->
+    <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.025);">
+      © 2023 Copyright:
+      <a class="text-reset fw-bold" href="https://mdbootstrap.com/">Lavaca.com</a>
+    </div>
+    <!-- Copyright -->
+  </footer>
+  <!-- Footer -->
+  <!-- JavaScript dari assets -->
+  <script src="../assets/script.js"></script>
+  <!-- JavaScript dari assets -->
+  <!-- Init Animasi -->
+  <script>
+    AOS.init();
+  </script>
+  <!-- Init Animasi -->
+</body>
+
+</html>

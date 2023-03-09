@@ -1,0 +1,39 @@
+/* responsive versi mobile */
+@media(max-width: 550px) {
+  h2 {
+    font-size: 60px;
+  }
+}
+
+@media(max-width: 990px){
+  .gambar1{
+    object-fit:contain;
+    margin-bottom: 10px;
+  }
+  .carousel-indicators{
+    margin-bottom: 60px;
+  }
+}
+
+/* responsive versi mobile */
+@media(max-width: 1000px) {
+  .Search{
+    min-width: 300px;
+  }
+}
+
+@media(max-width: 650px){
+  .dropdown:hover>.dropdown-menu {
+    display: block;
+    position: absolute ;
+    right: auto;
+    left: 0;
+  }
+}
+
+/* login */
+@media (max-width: 991.98px) {
+  .cascading-right {
+    margin-right: 0;
+  }
+}

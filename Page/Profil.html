@@ -1,0 +1,965 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" rel="stylesheet" />
+  <!-- MDB -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.1.0/mdb.min.css" rel="stylesheet" />
+  <!-- Font Awesome -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet" />
+  <!-- MDB javascript-->
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.1.0/mdb.min.js"></script>
+  <!-- CSS Animate On Scroll Library -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <!-- JavaScript Animate On Scroll Library -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <!-- CSS dari assets -->
+  <link rel="stylesheet" href="../assets/style.css">
+  <!-- CSS Media Query dari assets -->
+  <link rel="stylesheet" href="../assets/mobileStyle.css">
+
+  <title>Profil</title>
+</head>
+
+<body>
+  <!-- Init Animasi -->
+  <script>
+    AOS.init();
+  </script>
+  <!-- Init Animasi -->
+
+  <!--   Button back to top -->
+  <button type="button" class="btn btn-danger btn-floating btn-lg" id="btn-back-to-top">
+    <i class="fas fa-arrow-up"></i>
+  </button>
+  <!--   Button back to top -->
+
+  <!-- Navbar BOT-->
+  <nav class="navbar navbar-expand-lg fixed-top fixed-top-2" id="navbarbot">
+    <div class=" container-fluid justify-content-between mx-5">
+      <!-- Left elements -->
+      <div class="d-flex">
+        <!-- Brand -->
+        <a class="navbar-brand me-2 mb-1 d-flex align-items-center" href="Home.html">
+          <img src="../Foto/content/Lavaca.png" width="75" alt="Lavaca Logo" loading="lazy" style="margin-top: -15px" />
+        </a>
+      </div>
+      <!-- Search form -->
+      <form class="navbar-nav flex-row input-group w-50 me-lg-1">
+        <input type="search" class="form-control" placeholder="Cari produk" aria-label="Search" width="100" />
+        <a href="Pencarian.html" class="btn btn-outline text-light" data-mdb-ripple-color="dark" id="warna-tema-bg">
+          Search
+        </a>
+      </form>
+      <!-- Search form -->
+      <!-- Left elements -->
+
+      <!-- Center elements -->
+      <div class="collapse navbar-collapse">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link" href="#">Handphone</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Laptop</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Kalung</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Nike</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Kaos</a>
+          </li>
+        </ul>
+      </div>
+      <!-- Center elements -->
+
+      <!-- Right elements -->
+
+      <ul class="navbar-nav flex-row">
+        <li class="nav-item dropdown me-3 me-lg-1">
+          <a class="nav-link dropdown-toggle hidden-arrow" href="#" id="navbarDropdownMenuLink" role="button"
+            data-mdb-toggle="dropdown" aria-expanded="false">
+            <i class="fas fa-shopping-bag fa-lg"></i>
+            <span class="badge rounded-pill badge-notification bg-danger">6</span>
+          </a>
+
+          <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdownMenuLink" style="width: 300px;">
+            <div class="list-group list-group-light">
+              <a href="Keranjang.html" class="list-group-item list-group-item-action px-3 border-0 ripple">
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="d-flex align-items-center">
+                    <img src="https://cdn.eraspace.com/media/catalog/product/i/p/iphone_14_pro_max_deep_purple_1_6.jpg"
+                      alt="" style="width: 45px; height: 45px" class="rounded-square" />
+                    <div class="ms-3">
+                      <p class="fw-bold mb-1">Iphone</p>
+                      <p class="text-muted mb-0">1 Pcs</p>
+                    </div>
+                  </div>
+                  <span class="badge rounded-pill badge-success">Rp25.000.000</span>
+                </div>
+              </a>
+              <a href="Keranjang.html" class="list-group-item list-group-item-action px-3 border-0 ripple">
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="d-flex align-items-center">
+                    <img src="https://mdbootstrap.com/img/new/avatars/8.jpg" alt="" style="width: 45px; height: 45px"
+                      class="rounded-square" />
+                    <div class="ms-3">
+                      <p class="fw-bold mb-1">Crop Top Pakaian</p>
+                      <p class="text-muted mb-0">1 Pcs</p>
+                    </div>
+                  </div>
+                  <span class="badge rounded-pill badge-success">Rp250.000</span>
+                </div>
+              </a>
+              <div class="d-flex justify-content-between align-items-center px-3 py-3">
+                <div class="d-flex align-items-center">
+                  <a href="Keranjang.html" class="btn btn-outline btn-sm" id="warna-tema">
+                    Lihat Keranjang
+                  </a>
+                </div>
+              </div>
+            </div>
+          </ul>
+        </li>
+
+        <li class="nav-item dropdown me-3 me-lg-1   ">
+          <a class="nav-link dropdown-toggle hidden-arrow" href="#" id="navbarDropdownMenuLink" role="button"
+            data-mdb-toggle="dropdown" aria-expanded="false">
+            <i class="fas fa-comments fa-lg"></i>
+            <span class="badge rounded-pill badge-notification bg-danger">6</span>
+          </a>
+
+          <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdownMenuLink" style="width: auto;">
+            <!-- chat dropdown -->
+            <div class="list-group list-group-light">
+
+              <div class="p-3">
+                <div data-mdb-perfect-scrollbar="true" style="position: relative; width: 400px">
+                  <ul class="list-unstyled mb-0">
+                    <li class="p-2 border-bottom list-group-item list-group-item-action border-0 ripple">
+                      <a href="Chat.html" class="d-flex justify-content-between">
+                        <div class="d-flex flex-row">
+                          <div>
+                            <img
+                              src="https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-profiles/avatar-2.webp"
+                              alt="Generic placeholder image"
+                              class="d-flex align-self-center me-3 img-fluid rounded-circle border border-dark border-3"
+                              width="60">
+                            <span class="badge bg-success badge-dot"></span>
+                          </div>
+                          <div class="pt-1">
+                            <p class="fw-bold mb-0" id="warna-tema">Sanjaya Shop</p>
+                            <p class="small text-muted">Hallo kak Selamat datang...</p>
+                          </div>
+                        </div>
+                        <div class="pt-1">
+                          <p class="small text-muted mb-1">Just now</p>
+                          <span class="badge rounded-pill float-end" id="warna-tema-bg">2</span>
+                        </div>
+                      </a>
+                    </li>
+                    <li class="p-2 border-bottom list-group-item list-group-item-action border-0 ripple">
+                      <a href="Chat.html" class="d-flex justify-content-between">
+                        <div class="d-flex flex-row">
+                          <div>
+                            <img
+                              src="https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-profiles/avatar-2.webp"
+                              alt="Generic placeholder image"
+                              class="d-flex align-self-center me-3 img-fluid rounded-circle border border-dark border-3"
+                              width="60">
+                            <span class="badge bg-warning badge-dot"></span>
+                          </div>
+                          <div class="pt-1">
+                            <p class="fw-bold mb-0" id="warna-tema">Permata Indah</p>
+                            <p class="small text-muted">Hallo kak Selamat datang...</p>
+                          </div>
+                        </div>
+                        <div class="pt-1">
+                          <p class="small text-muted mb-1">5 mins ago</p>
+                          <span class="badge rounded-pill float-end" id="warna-tema-bg">2</span>
+                        </div>
+                      </a>
+                    </li>
+                    <li class="p-2 border-bottom list-group-item list-group-item-action border-0 ripple">
+                      <a href="Chat.html" class="d-flex justify-content-between">
+                        <div class="d-flex flex-row">
+                          <div>
+                            <img
+                              src="https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-profiles/avatar-2.webp"
+                              alt="Generic placeholder image"
+                              class="d-flex align-self-center me-3 img-fluid rounded-circle border border-dark border-3"
+                              width="60">
+                            <span class="badge bg-success badge-dot"></span>
+                          </div>
+                          <div class="pt-1">
+                            <p class="fw-bold mb-0" id="warna-tema">Agung Style</p>
+                            <p class="small text-muted">Iya kak</p>
+                          </div>
+                        </div>
+                        <div class="pt-1">
+                          <p class="small text-muted mb-1">Yesterday</p>
+                        </div>
+                      </a>
+                    </li>
+                    <li class="p-2 border-bottom list-group-item list-group-item-action border-0 ripple">
+                      <a href="Chat.html" class="d-flex justify-content-between">
+                        <div class="d-flex flex-row">
+                          <div>
+                            <img
+                              src="https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-profiles/avatar-2.webp"
+                              alt="Generic placeholder image"
+                              class="d-flex align-self-center me-3 img-fluid rounded-circle border border-dark border-3"
+                              width="60">
+                            <span class="badge bg-danger badge-dot"></span>
+                          </div>
+                          <div class="pt-1">
+                            <p class="fw-bold mb-0" id="warna-tema">Toko Olahraga Pusat</p>
+                            <p class="small text-muted">Yang warna merah kosong kak</p>
+                          </div>
+                        </div>
+                        <div class="pt-1">
+                          <p class="small text-muted mb-1">Yesterday</p>
+                        </div>
+                      </a>
+                    </li>
+                    <li class="p-2 border-bottom list-group-item list-group-item-action border-0 ripple">
+                      <a href="Chat.html" class="d-flex justify-content-between">
+                        <div class="d-flex flex-row">
+                          <div>
+                            <img
+                              src="https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-profiles/avatar-2.webp"
+                              alt="Generic placeholder image"
+                              class="d-flex align-self-center me-3 img-fluid rounded-circle border border-dark border-3"
+                              width="60">
+                            <span class="badge bg-warning badge-dot"></span>
+                          </div>
+                          <div class="pt-1">
+                            <p class="fw-bold mb-0" id="warna-tema">Cute Shop</p>
+                            <p class="small text-muted">Stok habis mohom maaf</p>
+                          </div>
+                        </div>
+                        <div class="pt-1">
+                          <p class="small text-muted mb-1">Yesterday</p>
+                        </div>
+                      </a>
+                    </li>
+                    <li class="p-2 border-bottom list-group-item border-0">
+                      <div class="d-flex justify-content-between align-items-center px-3 py-3">
+                        <div class="d-flex align-items-center">
+                          <a href="Chat.html" class="btn btn-outline btn-sm" id="warna-tema">
+                            Lihat Chat
+                          </a>
+                        </div>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+
+              </div>
+
+            </div>
+            <!-- chat dropdown -->
+
+          </ul>
+        </li>
+
+        <!-- profile -->
+        <li class="nav-item dropdown me-3 me-lg-1">
+          <a class="nav-link dropdown-toggle d-sm-flex align-items-sm-center" href="#" id="navbarDropdownMenuLink"
+            role="button" data-mdb-toggle="dropdown" aria-expanded="false">
+            <img src="https://mdbcdn.b-cdn.net/img/new/avatars/1.webp" class="rounded-circle" height="22"
+              alt="Black and White Portrait of a Man" loading="lazy" />
+            <strong class="d-none d-sm-block ms-1">Daniel</strong>
+          </a>
+
+          <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdownMenuLink">
+            <div class="list-group list-group-light">
+              <a href="Profil.html" class="list-group-item list-group-item-action px-3 border-0 ripple">
+                <div class="fw-bold">Show Profile</div>
+              </a>
+              <a href="../index.html" class="list-group-item list-group-item-action px-3 border-0 ripple">
+                <div class="fw-bold">Logout</div>
+              </a>
+            </div>
+          </ul>
+        </li>
+      </ul>
+      <!-- Right elements -->
+    </div>
+  </nav>
+  <!-- Navbar BOT-->
+
+  <!-- Navbar TOP-->
+  <nav class="navbar navbar-expand-sm fixed-top" id="navbartop" style="margin-top: -5px; margin-bottom: -10px">
+    <div class=" container-fluid justify-content-between mx-5">
+      <!-- Left elements -->
+      <div class="d-flex">
+
+      </div>
+      <div class="collapse navbar-collapse flex-row" id="navbarTogglerDemo02">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <nav aria-label="breadcrumb">
+            <ol class="breadcrumb">
+              <li class="breadcrumb-item">
+                <a href="#" class="text-white">Lavaca Home Stay</a>
+              </li>
+              <li class="breadcrumb-item">
+                <a href="#" class="text-white">L Tim</a>
+              </li>
+            </ol>
+          </nav>
+        </ul>
+      </div>
+      <!-- Left elements -->
+
+      <!-- Center elements -->
+
+      <!-- Center elements -->
+
+      <!-- Right elements -->
+
+      <div class="flex-row">
+        <ul class="collapse navbar-collapse navbar-nav me-auto mb-2 mb-lg-0" id="navbarTogglerDemo02">
+          <nav aria-label="breadcrumb">
+            <ol class="breadcrumb bread">
+              <li class="breadcrumb-item">
+                <a href="#" class="text-white">Tentang</a>
+              </li>
+              <li class="breadcrumb-item active" aria-current="page">
+                <a href="#" class="text-white">Bantuan</a>
+              </li>
+            </ol>
+          </nav>
+        </ul>
+        <button class="navbar-toggler" type="button" data-mdb-toggle="collapse" data-mdb-target="#navbarTogglerDemo02"
+          aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+          <i class="fas fa-bars"></i>
+        </button>
+      </div>
+      <!-- Right elements -->
+    </div>
+  </nav>
+  <!-- Navbar TOP -->
+
+  <!-- Right Side Profil saldo dkk -->
+  <div class="container-xxl p-5" style="margin-top: 60px;">
+    <div class="row">
+      <div class="col-lg-4">
+        <!-- Profil -->
+        <div class="card" style="border-radius: 15px;">
+          <div class="card-body p-4">
+            <div class="d-flex text-black">
+              <div class="flex-shrink-0">
+                <img src="../Foto/content/fotoBaju2.jpg" alt="Foto User" class="img-fluid border border-dark border-2"
+                  style="width: 120px; height: 120px; object-fit: cover; border-radius: 10px;">
+              </div>
+              <div class="flex-grow-1 ms-3">
+                <h5 class="mb-1">Daniel Ricky A</h5>
+                <p class="mb-2 pb-1" style="color: #2b2a2a;"><span class="badge badge-secondary">Silver Member</span>
+                </p>
+                <div class="d-flex justify-content-between rounded-3 p-2 mb-2" style="background-color: #efefef;">
+                  <div>
+                    <p class="mb-0"><i class="fa-solid fa-wallet "></i> Sisa Saldo </p>
+                  </div>
+                  <div class="px-3">
+                    <p class="mb-0"><i class="fa-solid fa-dollar-sign text-success"></i> 23.000</p>
+                  </div>
+                </div>
+                <div class="d-flex pt-1">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Profil -->
+        <br>
+        <div class="card mb-3">
+          <div class="card-body">
+            <h4>Settings</h4>
+            <div class="list-group list-group-light" id="list-tab" role="tablist">
+              <a class="list-group-item list-group-item-action active px-3 border-0" id="list-home-list"
+                data-mdb-toggle="list" href="#list-home" role="tab" aria-controls="list-home">Ubah Profil</a>
+              <a class="list-group-item list-group-item-action px-3 border-0" id="list-messages-list"
+                data-mdb-toggle="list" href="#list-messages" role="tab" aria-controls="list-messages">Daftar Alamat</a>
+              <a class="list-group-item list-group-item-action px-3 border-0" id="list-profile-list"
+                data-mdb-toggle="list" href="#list-profile" role="tab" aria-controls="list-profile">Pesanan Saya</a>
+            </div>
+          </div>
+        </div>
+        <!-- Horizontal Tab -->
+
+      </div>
+      <div class="col-lg-8">
+        <div class="tab-content" id="nav-tabContent">
+          <!-- Ubah Profil -->
+          <div class="tab-pane fade show active" id="list-home" role="tabpanel" aria-labelledby="list-home-list">
+            <div class="card" style="border-radius: 15px;">
+              <div class="card-body p-4">
+                <form class="row g-3">
+                  <div class="col-md-6">
+                    <label for="inputEmail4" class="form-label">Username</label>
+                    <input type="text" class="form-control" id="inputEmail4" value="Daniel Ricky A">
+                  </div>
+                  <div class="col-md-6 ">
+                    <label for="inputPassword" class="form-label">Password</label>
+                    <input type="password" class="form-control" id="inputPassword"
+                      placeholder="Jika tidak ingin merubahnya, biarkan saja kosong">
+                    <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1"
+                      onclick="showPassword()" />
+                    <label class="form-check-label" for="inlineCheckbox1">Show Password</label>
+                  </div>
+
+                  <div class="col-12">
+                    <label for="inputAddress" class="form-label">Email</label>
+                    <input type="email" class="form-control" id="inputAddress" value="DanielRiq24@gmail.com" disabled>
+                  </div>
+                  <div class="col-6">
+                    <label for="inputAddress2" class="form-label">Tempat Lahir</label>
+                    <input type="text" class="form-control" id="inputAddress2"
+                      placeholder="Isi sesuai dengan kartu keluarga">
+                  </div>
+                  <div class="col-6">
+                    <label for="inputDate" class="form-label">Tanggal lahir</label>
+                    <input type="date" class="form-control" id="inputDate">
+                  </div>
+                  <div class="col-md-6">
+                    <fieldset class="row">
+                      <legend class="col-form-label col-sm-4 pt-0">Jenis Kelamin</legend>
+                      <div class="col-sm-10">
+                        <div class="form-check">
+                          <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios1"
+                            value="option1">
+                          <label class="form-check-label" for="gridRadios1">
+                            Laki-laki
+                          </label>
+                        </div>
+                        <div class="form-check">
+                          <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios2"
+                            value="option2">
+                          <label class="form-check-label" for="gridRadios2">
+                            Perempuan
+                          </label>
+                        </div>
+                      </div>
+                    </fieldset>
+                  </div>
+                  <div class="col-12">
+                    <button type="submit" class="btn text-light" id="warna-tema-bg">Ubah Profil</button>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+          <!-- /Ubah Profil -->
+
+          <div class="tab-pane fade" id="list-messages" role="tabpanel" aria-labelledby="list-messages-list">
+            <div class="d-flex text-black">
+              <h3 class="card-title">Daftar Alamat</h3>
+            </div>
+            <div class="card my-3" style="border-radius: 15px;">
+              <div class="card-body p-4">
+                <h5 class="card-title mt-1">Rumah Blora</h5>
+                <h4 class="card-title mb-0" style="font-size: 22px;"><strong>Daniel Ricky A</strong></h4>
+                <p class="card-text mb-1" style="font-size: 18px;">083728492771</p>
+                <p class="card-text mt-2 mb-4">Jl. Mawar, Kec. Margorejo, Kabupaten Pati, Jawa Tengah [Tokopedia
+                  Note: Jl. melati no.23, Perumahan Griya Sekarkurung RT 9 RW 3] Margorejo, Kab. Pati, 59163</p>
+                <div>
+                  <h6 class="mt-2"><i class="fa-sharp fa-solid fa-location-dot"></i> Lokasi Sudah Tepat</h6>
+                </div>
+              </div>
+            </div>
+            <div class="card my-3" style="border-radius: 15px;">
+              <div class="card-body p-4">
+                <h5 class="card-title mt-1">Rumah Blora</h5>
+                <h4 class="card-title mb-0" style="font-size: 22px;"><strong>Daniel Ricky A</strong></h4>
+                <p class="card-text mb-1" style="font-size: 18px;">083728492771</p>
+                <p class="card-text mt-2 mb-4">Jl. Jemb. Baru UGM Jl. Pogung Kidul, Pogung Kidul, Sinduadi,
+                  Kec. Sleman, Kabupaten Sleman, Daerah Istimewa Yogyakarta</p>
+                <div>
+                  <h6 class="mt-2"><i class="fa-sharp fa-solid fa-location-dot"></i> Lokasi Sudah Tepat</h6>
+                </div>
+              </div>
+            </div>
+            <div class="card my-3" style="border-radius: 15px;">
+              <div class="card-body p-4">
+                <h5 class="card-title mt-1">Kos Putra Mewah</h5>
+                <h4 class="card-title" style="font-size: 22px;"><strong>Ricky</strong></h4>
+                <p class="card-text mb-1" style="font-size: 18px;">083728492771</p>
+                <p class="card-text mt-2 mb-4">Jalan Kaliurang KM. 5,6 No.14, Manggung, Caturtunggal, Kabupaten
+                  Sleman, Daerah Istimewa Yogyakarta</p>
+                <div>
+                  <h6 class="mt-2"><i class="fa-sharp fa-solid fa-location-dot"></i>Lokasi Sudah Tepat</h6>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="tab-pane fade" id="list-profile" role="tabpanel" aria-labelledby="list-profile-list">
+
+            <!-- Tabs navs -->
+            <ul class="nav nav-tabs mb-3" id="ex1" role="tablist">
+              <li class="nav-item" role="presentation">
+                <a class="nav-link active" id="ex1-tab-1" data-mdb-toggle="tab" href="#ex1-tabs-1" role="tab"
+                  aria-controls="ex1-tabs-1" aria-selected="true">Semua</a>
+              </li>
+              <li class="nav-item" role="presentation">
+                <a class="nav-link" id="ex1-tab-2" data-mdb-toggle="tab" href="#ex1-tabs-2" role="tab"
+                  aria-controls="ex1-tabs-2" aria-selected="false">Belanja</a>
+              </li>
+              <li class="nav-item" role="presentation">
+                <a class="nav-link" id="ex1-tab-3" data-mdb-toggle="tab" href="#ex1-tabs-3" role="tab"
+                  aria-controls="ex1-tabs-3" aria-selected="false">Top-up & Tagihan</a>
+              </li>
+            </ul>
+            <!-- Tabs navs -->
+
+            <!-- Tabs content -->
+            <div class="tab-content" id="ex1-content">
+              <div class="tab-pane fade show active" id="ex1-tabs-1" role="tabpanel" aria-labelledby="ex1-tab-1">
+                <!-- TAB SEMUA -->
+                <!-- Dummy 1 -->
+                <div class="card my-3" style="border-radius: 15px;">
+                  <div class="card-body p-3">
+                    <div class="d-flex">
+                      <div class="flex-shrink-0">
+                        <img
+                          src="https://ae01.alicdn.com/kf/HTB1gd72clGw3KVjSZFDq6xWEpXaV/Bandai-Roh-Tamashii-Bangsa-S-H-Figuarts-SHF-action-Figure-Kamen-Rider-Den-O-Pedang-      Form.jpg_Q90.jpg_.webp"
+                          alt="fotoProduk" class="img-fluid border border-dark border-1"
+                          style="width: 90px; border-radius: 10px;">
+                      </div>
+                      <div class="flex-grow-1 ms-3">
+                        <h5 class="mb-1"><i class="fa-solid fa-bag-shopping pr-1"></i> Tokusatsu shop</h5>
+                        <p class="mb-1 ">SHF Figure Masked Kamen Rider Den O</p>
+                        <div class="d-flex mb-2 ">
+                          <div>
+                            <p class="mb-0">Harga</p>
+                          </div>
+                          <div class="px-3">
+                            <p class="mb-0">Rp.230.000</p>
+                          </div>
+                        </div>
+                        <div class="d-sm-flex d-block justify-content-end">
+                          <button type="button" class="btn btn-lg btn btn-tertiary me-3" data-mdb-toggle="modal"
+                            data-mdb-target="#exampleModal" style="color: #C70092;">Cek Detail</button>
+                          <a href="Produk.html">
+                            <button type="button" class="btn btn-lg text-light" id="warna-tema-bg">Beli
+                              Lagi</button></a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- dummy 2 -->
+                <div class="card my-3" style="border-radius: 15px;">
+                  <div class="card-body p-3">
+                    <div class="d-flex">
+
+                      <div class="flex-grow-1 ms-3">
+                        <h5 class="mb-1"><i class="fa-solid fa-ticket-simple"></i> Voucher Game</h5>
+                        <p class="mb-1 ">Steam Wallet 45000</p>
+                        <div class="d-flex mb-2 ">
+                          <div>
+                            <p class="mb-0">Harga</p>
+                          </div>
+                          <div class="px-3">
+                            <p class="mb-0">Rp.60000</p>
+                          </div>
+                        </div>
+                        <div class="d-sm-flex d-block justify-content-end">
+                          <button type="button" class="btn btn-lg btn btn-tertiary me-3" data-mdb-toggle="modal"
+                            data-mdb-target="#exampleModal" style="color: #C70092;">Cek Detail</button>
+                          <a href="Produk.html">
+                            <button type="button" class="btn btn-lg text-light" id="warna-tema-bg">Beli
+                              Lagi</button></a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- Dummy 3  -->
+                <div class="card my-3" style="border-radius: 15px;">
+                  <div class="card-body p-3">
+                    <div class="d-flex">
+                      <div class="flex-shrink-0">
+                        <img
+                          src="https://images.tokopedia.net/img/VqbcmM/2022/1/6/00407455-e94b-4138-91ef-686f944ca5e6.jpg"
+                          alt="fotoProduk" class="img-fluid border border-dark border-1"
+                          style="width: 90px; border-radius: 10px;">
+                      </div>
+                      <div class="flex-grow-1 ms-3">
+                        <h5 class="mb-1"><i class="fa-solid fa-bag-shopping pr-1"></i> Sades Official Store</h5>
+                        <p class="mb-1 ">Keyboard Gaming Mechanical TKL Sades Khanda / Removable Switch - Hitam,
+                          Switch Red</p>
+                        <div class="d-flex mb-2 ">
+                          <div>
+                            <p class="mb-0">Harga</p>
+                          </div>
+                          <div class="px-3">
+                            <p class="mb-0">Rp.405.000</p>
+                          </div>
+                        </div>
+                        <div class="d-sm-flex d-block justify-content-end">
+                          <button type="button" class="btn btn-lg btn btn-tertiary me-3" data-mdb-toggle="modal"
+                            data-mdb-target="#exampleModal" style="color: #C70092;">Cek Detail</button>
+                          <a href="Produk.html">
+                            <button type="button" class="btn btn-lg text-light" id="warna-tema-bg">Beli
+                              Lagi</button></a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- Dummy 4 -->
+                <div class="card my-3" style="border-radius: 15px;">
+                  <div class="card-body p-3">
+                    <div class="d-flex">
+
+                      <div class="flex-grow-1 ms-3">
+                        <h5 class="mb-1"><i class="fa-solid fa-ticket-simple"></i> Tagihan Listrik</h5>
+                        <div class="d-flex mb-2 ">
+                          <div>
+                            <p class="mb-0">Harga</p>
+                          </div>
+                          <div class="px-3">
+                            <p class="mb-0">Rp.100.000</p>
+                          </div>
+                        </div>
+                        <div class="d-sm-flex d-block justify-content-end">
+                          <button type="button" class="btn btn-lg btn btn-tertiary me-3" data-mdb-toggle="modal"
+                            data-mdb-target="#exampleModal" style="color: #C70092;">Cek Detail</button>
+                          <a href="Produk.html">
+                            <button type="button" class="btn btn-lg text-light " id="warna-tema-bg">Beli
+                              Lagi</button></a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+
+                <!-- TAB SEMUA -->
+              </div>
+              <div class="tab-pane fade" id="ex1-tabs-2" role="tabpanel" aria-labelledby="ex1-tab-2">
+                <!-- Dummy 2.1 -->
+                <div class="card my-3" style="border-radius: 15px;">
+                  <div class="card-body p-3">
+                    <div class="d-flex">
+                      <div class="flex-shrink-0">
+                        <img
+                          src="https://ae01.alicdn.com/kf/HTB1gd72clGw3KVjSZFDq6xWEpXaV/Bandai-Roh-Tamashii-Bangsa-S-H-Figuarts-SHF-action-Figure-Kamen-Rider-Den-O-Pedang-      Form.jpg_Q90.jpg_.webp"
+                          alt="fotoProduk" class="img-fluid border border-dark border-1"
+                          style="width: 90px; border-radius: 10px;">
+                      </div>
+                      <div class="flex-grow-1 ms-3">
+                        <h5 class="mb-1"><i class="fa-solid fa-bag-shopping pr-1"></i> Tokusatsu shop</h5>
+                        <p class="mb-1 ">SHF Figure Masked Kamen Rider Den O</p>
+                        <div class="d-flex mb-2 ">
+                          <div>
+                            <p class="mb-0">Harga</p>
+                          </div>
+                          <div class="px-3">
+                            <p class="mb-0">Rp.230.000</p>
+                          </div>
+                        </div>
+                        <div class="d-sm-flex d-block justify-content-end">
+                          <button type="button" class="btn btn-lg btn btn-tertiary me-3" data-mdb-toggle="modal"
+                            data-mdb-target="#exampleModal" style="color: #C70092;">Cek Detail</button>
+                          <a href="Produk.html">
+                            <button type="button" class="btn btn-lg text-light" id="warna-tema-bg">Beli
+                              Lagi</button></a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- Dummy 2.2  -->
+                <div class="card my-3" style="border-radius: 15px;">
+                  <div class="card-body p-3">
+                    <div class="d-flex">
+                      <div class="flex-shrink-0">
+                        <img
+                          src="https://images.tokopedia.net/img/VqbcmM/2022/1/6/00407455-e94b-4138-91ef-686f944ca5e6.jpg"
+                          alt="fotoProduk" class="img-fluid border border-dark border-1"
+                          style="width: 90px; border-radius: 10px;">
+                      </div>
+                      <div class="flex-grow-1 ms-3">
+                        <h5 class="mb-1"><i class="fa-solid fa-bag-shopping pr-1"></i> Sades Official Store</h5>
+                        <p class="mb-1 ">Keyboard Gaming Mechanical TKL Sades Khanda / Removable Switch - Hitam,
+                          Switch Red</p>
+                        <div class="d-flex mb-2 ">
+                          <div>
+                            <p class="mb-0">Harga</p>
+                          </div>
+                          <div class="px-3">
+                            <p class="mb-0">Rp.405.000</p>
+                          </div>
+                        </div>
+                        <div class="d-sm-flex d-block justify-content-end">
+                          <button type="button" class="btn btn-lg btn btn-tertiary me-3" data-mdb-toggle="modal"
+                            data-mdb-target="#exampleModal" style="color: #C70092;">Cek Detail</button>
+                          <a href="Produk.html">
+                            <button type="button" class="btn btn-lg text-light " id="warna-tema-bg">Beli
+                              Lagi</button></a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+
+              </div>
+              <div class="tab-pane fade" id="ex1-tabs-3" role="tabpanel" aria-labelledby="ex1-tab-3">
+                <!-- dummy 3.1 -->
+                <div class="card my-3" style="border-radius: 15px;">
+                  <div class="card-body p-3">
+                    <div class="d-flex">
+
+                      <div class="flex-grow-1 ms-3">
+                        <h5 class="mb-1"><i class="fa-solid fa-ticket-simple"></i> Voucher Game</h5>
+                        <p class="mb-1 ">Steam Wallet 45000</p>
+                        <div class="d-flex mb-2 ">
+                          <div>
+                            <p class="mb-0">Harga</p>
+                          </div>
+                          <div class="px-3">
+                            <p class="mb-0">Rp.60000</p>
+                          </div>
+                        </div>
+                        <div class="d-sm-flex d-block justify-content-end">
+                          <button type="button" class="btn btn-lg btn btn-tertiary me-3" data-mdb-toggle="modal"
+                            data-mdb-target="#exampleModal" style="color: #C70092;">Cek Detail</button>
+                          <a href="Produk.html">
+                            <button type="button" class="btn btn-lg text-light" id="warna-tema-bg">Beli
+                              Lagi</button></a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- Dummy 3.2 -->
+                <div class="card my-3" style="border-radius: 15px;">
+                  <div class="card-body p-3">
+                    <div class="d-flex">
+
+                      <div class="flex-grow-1 ms-3">
+                        <h5 class="mb-1"><i class="fa-solid fa-ticket-simple"></i> Tagihan Listrik</h5>
+                        <div class="d-flex mb-2 ">
+                          <div>
+                            <p class="mb-0">Harga</p>
+                          </div>
+                          <div class="px-3">
+                            <p class="mb-0">Rp.100.000</p>
+                          </div>
+                        </div>
+                        <div class="d-sm-flex d-block justify-content-end">
+                          <button type="button" class="btn btn-lg btn btn-tertiary me-3" data-mdb-toggle="modal"
+                            data-mdb-target="#exampleModal" style="color: #C70092;">Cek Detail</button>
+                          <a href="Produk.html">
+                            <button type="button" class="btn btn-lg text-light" id="warna-tema-bg">Beli
+                              Lagi</button></a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+
+              </div>
+            </div>
+            <!-- Tabs content -->
+
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+  </div>
+  </div>
+  <!-- Footer -->
+  <footer class="text-center text-lg-start bg-white text-muted p-3 p-xl-0">
+    <!-- Section: Social media -->
+    <div class="container-sm mt-4">
+      <section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
+        <!-- Left -->
+        <div class="me-5 d-none d-lg-block">
+          <span>Ikuti Kami:</span>
+        </div>
+        <!-- Left -->
+
+        <!-- Right -->
+        <div>
+          <a href="" class="me-4 link-secondary">
+            <i class="fab fa-facebook-f"></i>
+          </a>
+          <a href="" class="me-4 link-secondary">
+            <i class="fab fa-twitter"></i>
+          </a>
+          <a href="" class="me-4 link-secondary">
+            <i class="fab fa-instagram"></i>
+          </a>
+          <a href="" class="me-4 link-secondary">
+            <i class="fab fa-pinterest"></i>
+          </a>
+          <a href="" class="me-4 link-secondary">
+            <i class="fab fa-linkedin"></i>
+          </a>
+        </div>
+        <!-- Right -->
+      </section>
+      <!-- Section: Social media -->
+    </div>
+
+    <!-- Section: Links  -->
+    <section class="">
+      <div class="container-md text-md-start mt-5">
+        <!-- Grid row -->
+        <div class="row mt-3">
+          <!-- Grid column -->
+          <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+            <!-- Content -->
+            <h6 class="text-uppercase fw-bold mb-4">
+              <i class="fas fa-gem me-3 text-secondary" style="text-align: center;"></i>Lavaca
+            </h6>
+            <p style="text-align: justify;">
+              Dengan visi untuk menjadi online shop terpercaya dan terbaik di Indonesia, Lavanca selalu
+              berusaha
+              memberikan pengalaman belanja yang nyaman dan aman bagi pelanggannya.
+            </p>
+          </div>
+          <!-- Grid column -->
+
+          <!-- Grid column -->
+          <div class="col-md-2 col-lg-2 col-xl-2 mx-auto text-left mb-4">
+            <!-- Links -->
+            <h6 class="text-uppercase fw-bold mb-4">
+              Jelajahi
+            </h6>
+            <p>
+              <a href="#!" class="text-reset">Tentang Lavaca</a>
+            </p>
+            <p>
+              <a href="#!" class="text-reset">L tim</a>
+            </p>
+            <p>
+              <a href="#!" class="text-reset">Kebijakan Lavaca</a>
+            </p>
+            <p>
+              <a href="#!" class="text-reset">Kebijakan privasi</a>
+            </p>
+          </div>
+          <!-- Grid column -->
+
+          <!-- Grid column -->
+          <div class="col-md-3 col-lg-2 col-xl-2 mx-auto text-left mb-4">
+            <!-- Links -->
+            <h6 class="text-uppercase fw-bold mb-4">
+              Layanan
+            </h6>
+            <p>
+              <a href="#!" class="text-reset">Bantuan</a>
+            </p>
+            <p>
+              <a href="#!" class="text-reset">Checkout</a>
+            </p>
+            <p>
+              <a href="#!" class="text-reset">LavacaPay</a>
+            </p>
+            <p>
+              <a href="#!" class="text-reset">Garansi</a>
+            </p>
+          </div>
+          <!-- Grid column -->
+
+          <!-- Grid column -->
+          <div class="col-md-4 col-lg-3 col-xl-3 mx-auto text-left mb-md-0 mb-4">
+            <!-- Links -->
+            <h6 class="text-uppercase fw-bold mb-4">Download Lavaca</h6>
+            <p>
+              <a href="#!" class="text-reset">
+                <img src="../Foto/content/playstoredown.png" alt="" style="width: 150px; height: auto"
+                  class="rounded-square" />
+              </a>
+            </p>
+            <p>
+              <a href="#!" class="text-reset">
+                <img src="../Foto/content/appstoredown.png" alt="" style="width: 150px; height: auto"
+                  class="rounded-square" />
+              </a>
+            </p>
+          </div>
+          <!-- Grid column -->
+        </div>
+        <!-- Grid row -->
+      </div>
+    </section>
+    <!-- Section: Links  -->
+
+    <!-- Copyright -->
+    <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.025);">
+      © 2023 Copyright:
+      <a class="text-reset fw-bold" href="https://mdbootstrap.com/">Lavaca.com</a>
+    </div>
+    <!-- Copyright -->
+  </footer>
+  <!-- Footer -->
+
+  <!-- Modal -->
+  <div class="modal  fade" id="exampleModal" tabindex="-1" aria-labelledby="detaiModal" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Detail Pembelian Produk</h5>
+          <button type="button" class="btn-close" data-mdb-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <div class="d-flex">
+            <div class="flex-shrink-0">
+              <img src="https://images.tokopedia.net/img/VqbcmM/2022/1/6/00407455-e94b-4138-91ef-686f944ca5e6.jpg"
+                alt="fotoProduk" class="img-fluid border border-dark border-1"
+                style="width: 180px; border-radius: 10px;">
+            </div>
+            <div class="flex-grow-1 ms-3">
+              <p>Id Transaksi : 123XXXXXXXXXXXXTr</p>
+              <h3 class="mb-1"><i class="fa-solid fa-bag-shopping pr-1"></i> Sades Official Store</h3>
+              <p class="mb-1 fs-5">Keyboard Gaming Mechanical TKL Sades Khanda / Removable Switch - Hitam,
+                Switch Red</p>
+              <div class="d-flex">
+                <div>
+                  <p class="mb-0 fs-5">Harga</p>
+                </div>
+                <div class="px-3">
+                  <p class="mb-0 fs-5">Rp.405.000 X 1 Pcs</p>
+                </div>
+              </div>
+              <div class="d-flex">
+                <div>
+                  <p class="mb-0 fs-5">Total Harga</p>
+                </div>
+                <div class="px-3">
+                  <p class="mb-0 fs-5">Rp.405.000</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- JavaScript dari assets -->
+    <script src="../assets/script.js"></script>
+    <!-- JavaScript dari assets -->
+    <!-- Init Animasi -->
+    <script>
+      AOS.init();
+    </script>
+    <!-- Init Animasi -->
+</body>
+
+</html>
