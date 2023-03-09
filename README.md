@@ -4,6 +4,7 @@ Dengan tema menghadapi krisis ekonomi terhadap toko-toko di masa pandemi. Oleh k
 dengan nama toko "Lavaca" untuk mengatasi masalah tersebut.
 
 Member :
+
 F. Hanindya Fernandito
 
 Daniel Ricky A
