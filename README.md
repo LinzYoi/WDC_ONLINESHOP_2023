@@ -11,5 +11,6 @@ Member :
 - Daniel Ricky Alexander
 - F. Hanindya Fernandito
 
-Jika Ingin melihat websitenya bisa menggunakan link ini atau downlaod filenya
+Jika Ingin melihat websitenya bisa menggunakan link ini atau download filenya
+
 https://WDCONLINESHOP2023.fernanditoppo.repl.co
