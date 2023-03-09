@@ -5,4 +5,5 @@ dengan nama toko "Lavaca" untuk mengatasi masalah tersebut.
 
 Member :
 F. Hanindya Fernandito
+
 Daniel Ricky A
